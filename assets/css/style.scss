@@ -142,7 +142,7 @@
 .inner2 {
     position: relative;
     max-width: 100%;
-    margin: 0 auto;
+    margin: -10px auto 0px auto;
     text-align: center;
 }
 
@@ -166,4 +166,7 @@
 #main_content2{
     padding-top: 40px;
     text-align: center;
+}
+#gitButton{
+    margin: auto;
 }
