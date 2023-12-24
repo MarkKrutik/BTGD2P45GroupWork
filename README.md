@@ -1,4 +1,4 @@
-## About
+## [About]: http://www.reddit.com
 ## Roles
 ## GDD
 ## Production Timeline
