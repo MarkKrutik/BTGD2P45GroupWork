@@ -23,7 +23,12 @@
         }
       }
     </script>
-     <div class="topnav" id="myTopnav">
+     
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      
+        <header class="inner">
+          <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
@@ -32,10 +37,6 @@
             <i class="fa fa-bars"></i>
             </a>
           </div>
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      
-        <header class="inner">
           {% if site.github.is_project_page %}
             <a id="forkme_banner" href="{{ site.github.repository_url }}">Test on GitHub</a>
           {% endif %}
