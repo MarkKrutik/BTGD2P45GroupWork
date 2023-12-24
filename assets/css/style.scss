@@ -1,7 +1,7 @@
 ---
 ---
 .forkme_banner{
-  position: fixed;
+  position: static;
 }
 @import "{{ site.theme }}";
 /* Add a black background color to the top navigation */
