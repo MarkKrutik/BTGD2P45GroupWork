@@ -1,4 +1,4 @@
-## [About]: http://www.reddit.com
+## [About](https://www.google.com)
 ## Roles
 ## GDD
 ## Production Timeline
