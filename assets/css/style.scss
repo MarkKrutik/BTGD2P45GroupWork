@@ -14,7 +14,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    margin: 0 190px 0 190px;
+    margin: -10px auto 0px auto;
 }
 /* The navigation menu */
 .navbar {
@@ -142,7 +142,7 @@
 .inner2 {
     position: relative;
     max-width: 100%;
-    margin: -10px auto 0px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
