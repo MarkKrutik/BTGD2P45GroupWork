@@ -1,5 +1,3 @@
-# :Table of Contents:
-
 ## About
 ## Roles
 ## GDD
