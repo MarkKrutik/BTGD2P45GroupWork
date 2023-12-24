@@ -1,3 +1,4 @@
+### [Getting Started](https://www.google.com) ###
 ### [About](https://www.google.com) ###
 ### [Roles](https://www.google.com) ###
 ### [Game Design Document](https://www.google.com) ###
