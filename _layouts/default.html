@@ -26,7 +26,11 @@
      
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-      <div class="topnav" id="myTopnav">
+      
+      
+        <header class="inner">
+          {% if site.github.is_project_page %}
+            <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
@@ -35,10 +39,7 @@
             <i class="fa fa-bars"></i>
             </a>
             
-          </div>
-      
-        <header class="inner">
-          {% if site.github.is_project_page %}
+            </div>
             <a id="forkme_banner" href="{{ site.github.repository_url }}">Test on GitHub</a>
           {% endif %}
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
