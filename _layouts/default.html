@@ -11,7 +11,6 @@
 {% seo %}
     {% include head-custom.html %}
   </head>
-
   <body>
     <script>
       function myFunction() {
@@ -23,31 +22,23 @@
         }
       }
     </script>
-      <div class="topnav" id="myTopnav">
-        
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#roles">Roles</a>
-            <a href="#resources">Resources</a>
-            <a href="#gdd">GDD</a>
-            <a href="#contact">Contact</a>
-            <a href="#contract">Group Contract</a>
-            <a href="#production">Production Timeline</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#roles">Roles</a>
+          <a href="#resources">Resources</a>
+          <a href="#gdd">GDD</a>
+          <a href="#drive">Google Drive</a>
+          <a href="#contract">Group Contract</a>
+          <a href="#production">Production Timeline</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">              
             <i class="fa fa-bars"></i>
-            </a>
-              <a id="forkme_banner2" href="{{ site.github.repository_url }}">Test on GitHub</a>
-            
-            </div>
-      
+          </a>
+          <a id="forkme_banner2" href="{{ site.github.repository_url }}">Test on GitHub</a>
+    </div>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-     
-      
         <header class="inner">
-          
-           
-          
            <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
@@ -71,9 +62,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+        <p>Copyright BTGD2P45 GroupName 2024. All Rights Reserved.</p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
