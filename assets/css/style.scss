@@ -181,9 +181,13 @@ table {
   width: 86%;
 }
 
-th, td {
+td {
   text-align: left;
   padding: 8px;
 }
+
+th {
+    text-align: center;
+{
 
 tr:nth-child(even){background-color: #f2f2f2}
