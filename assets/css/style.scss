@@ -176,11 +176,14 @@
 #gitButton{
     margin: 0px  350px  0px 350px;
 }
-table {
+table, th, td {
+  border: 1px solid black;
   border-collapse: collapse;
-  width: 50%;
 }
-
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
 td {
   text-align: left;
   padding: 8px;
@@ -191,7 +194,3 @@ th {
 {
 
 tr:nth-child(even){background-color: #f2f2f2}
-table.center {
-    margin-left: auto;
-    margin-right: auto;
-}
