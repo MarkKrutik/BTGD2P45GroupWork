@@ -181,7 +181,7 @@ table{
     width: 100%;
     background-color: white;
 }
-table, th, td {
-  border: 1px solid;
+th, td {
+  border-bottom: 1px solid #ddd;
 }
 tr:hover {background-color: grey;}
