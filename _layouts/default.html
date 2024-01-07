@@ -23,7 +23,20 @@
   } else {
     x.className = "topnav";
   }
+}   
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
 }
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
       </script>
 <!-- The navigation menu -->
 <div class="topnav" id="myTopnav">
@@ -212,5 +225,6 @@
         <p>Copyright GroupName 2024. All Rights Reserved. Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   </body>
 </html>
