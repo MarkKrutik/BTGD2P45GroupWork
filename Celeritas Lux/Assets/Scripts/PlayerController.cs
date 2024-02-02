@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     /// <summary> The visible part of the player. </summary>
     public MeshFilter sprite;
 
+    public EnergyBar energyBar;
+
     /// <summary> Determines the acceleration of the player. </summary>
     public float moveSpeed;
 
@@ -71,6 +73,8 @@ public class PlayerController : MonoBehaviour
     {
         curEnergy = maxEnergy;
         ToggleRagdoll(false);
+        energyBar.SetMaxEnergy(maxEnergy);
+        energyBar.SetEnergy(curEnergy);
     }
 
     // Update is called once per frame
@@ -100,6 +104,7 @@ public class PlayerController : MonoBehaviour
     public bool ChangePower(float amount)
     {
         curEnergy = Mathf.Clamp(curEnergy + amount,0,maxEnergy);
+        energyBar.SetEnergy(curEnergy);
         Debug.Log("Current Energy: " + curEnergy + ", # of Jumps: " + jumpCount);
         if (curEnergy == 0)
         {
