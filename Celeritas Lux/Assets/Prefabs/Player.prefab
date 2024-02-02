@@ -214,12 +214,14 @@ MonoBehaviour:
   sprite: {fileID: 415789292978335171}
   moveSpeed: 20
   jumpHeight: 10
+  dashForce: 10
   groundCast: {fileID: 4647042190473513312}
   groundCheckDist: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  curGravity: {x: 0, y: -9.81, z: 0}
+  curGravity: {x: 0, y: -20, z: 0}
   airControlFactor: 0.3
   maxEnergy: 10
   jumpCostMultiplier: 2
+  dashCost: 3

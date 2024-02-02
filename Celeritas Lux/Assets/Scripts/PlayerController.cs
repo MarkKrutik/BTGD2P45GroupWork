@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     /// <summary> Determines the amount of force applied when the player jumps </summary>
     public float jumpHeight;
 
+    /// <summary> the Multiplier on the player's current speed applied when dashing </summary>
+    public float dashForce;
+
     /// <summary> The point from which to detect if the ground is nearby, used for isGrounded checks. </summary>
     public Transform groundCast;
     /// <summary> The distance the ground has to be be within the casting point to be considered grounded. </summary>
@@ -33,8 +36,13 @@ public class PlayerController : MonoBehaviour
 
     /// <summary> The max energy the player can have at any given time. </summary>
     public float maxEnergy = 10;
+
     /// <summary> The factor the cost of a jump is multiplied by each successive in-air jump. </summary>
     public float jumpCostMultiplier = 2;
+
+    /// <summary> The cost in energy to use a dash, flat rate </summary>
+    public float dashCost = 3;
+
 
     /// <summary> Is the player currently facing right? if false, then facing left. </summary>
     private bool facingRight = true;
@@ -55,6 +63,9 @@ public class PlayerController : MonoBehaviour
     /// <summary> Is there a jump stored in the buffer waiting to be processed on the next physics frame? </summary>
     private bool unProcessedJump = false;
 
+    /// <summary> Is there a dash stored in the buffer waiting to be processed on the next physics frame? </summary>
+    private bool unProcessedDash = false;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -66,6 +77,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         unProcessedJump |= Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow); // Input.GetKeyDown has to be handled in the Update() function
+        unProcessedDash |= Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
     }
 
     private void FixedUpdate()
@@ -73,11 +85,6 @@ public class PlayerController : MonoBehaviour
         GroundedCheck();
         CalculateMovement();
         ApplyGravity();
-    }
-
-    private void ApplyGravity()
-    {
-        rb.AddForce(curGravity * rb.mass,ForceMode.Acceleration);
     }
 
     private void Jump()
@@ -108,9 +115,13 @@ public class PlayerController : MonoBehaviour
         if (toggle)
         {
             rb.AddTorque(new Vector3(0, 0, UnityEngine.Random.Range(-1, 1)), ForceMode.VelocityChange); // TODO: verify this does anything
+            rb.constraints &= ~RigidbodyConstraints.FreezeRotationZ; // flip bit off
         }
-        else rb.rotation = Quaternion.Euler(0, 0, 0);
-        rb.constraints ^= RigidbodyConstraints.FreezeRotationZ; // flip the bit that stops rotation from happening, should always be synced up with ragdoll
+        else
+        {
+            rb.rotation = Quaternion.Euler(0, 0, 0);
+            rb.constraints |= RigidbodyConstraints.FreezeRotationZ; // flip bit on
+        }
         isRagdolled = toggle;
 
     }
@@ -132,6 +143,9 @@ public class PlayerController : MonoBehaviour
 
         if (moveInput.y > 0) Jump();
 
+        if (unProcessedDash) Dash();
+        unProcessedDash = false;
+
         if (moveInput.x * rb.velocity.x < 0) // if the intended velocity and current velocity are opposite directions (player wants to go other way), slow down faster 
         {
             rb.AddForce(new Vector3(moveInput.x * moveSpeed * 3, rb.velocity.y, 0), ForceMode.Acceleration);
@@ -139,6 +153,14 @@ public class PlayerController : MonoBehaviour
 
         if (!facingRight && moveInput.x > 0) Flip(); // was left now right, so flip
         else if (facingRight && moveInput.x < 0) Flip(); // was right now left, so flip
+    }
+
+    private void Dash()
+    {
+        if (isRagdolled) return;
+        if (rb.velocity.sqrMagnitude < 4) return;
+        ChangePower(-dashCost);
+        rb.AddForce(rb.velocity.normalized * dashForce, ForceMode.Impulse);
     }
 
     private void Flip()
@@ -150,4 +172,6 @@ public class PlayerController : MonoBehaviour
     }
 
     private void GroundedCheck() => isGrounded = Physics.OverlapSphere(groundCast.position, groundCheckDist, groundLayer).Length > 0;
+
+    private void ApplyGravity() => rb.AddForce(curGravity * rb.mass, ForceMode.Acceleration);
 }
