@@ -1224,6 +1224,7 @@ Transform:
   - {fileID: 9046119109102228324}
   - {fileID: 5345955663858290171}
   - {fileID: 3847632957455686170}
+  - {fileID: 5561925479446501114}
   - {fileID: 130682175335284072}
   - {fileID: 2475098638441158449}
   - {fileID: 5488985449273405788}
@@ -1664,7 +1665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &130682175335284072
 Transform:
   m_ObjectHideFlags: 0
@@ -1680,7 +1681,6 @@ Transform:
   m_Children:
   - {fileID: 8348260934295158009}
   - {fileID: 8773169708064586007}
-  - {fileID: 5561925479446501114}
   - {fileID: 2425100868309410089}
   - {fileID: 4572233064194495973}
   - {fileID: 1343403152281300251}
@@ -3810,7 +3810,7 @@ PrefabInstance:
     - target: {fileID: 1188661087306009338, guid: 6c5b182e5e58d2342bbdbea18c4c47cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 0.79
       objectReference: {fileID: 0}
     - target: {fileID: 1188661087306009338, guid: 6c5b182e5e58d2342bbdbea18c4c47cc,
         type: 3}
@@ -4348,7 +4348,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 130682175335284072}
+    m_TransformParent: {fileID: 2301044927355688483}
     m_Modifications:
     - target: {fileID: 1597979020068193315, guid: 8a41b71a1b6237040bf4fdc1265f64cd,
         type: 3}

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,7 +12,17 @@ public class PlayerController : MonoBehaviour
     /// <summary> The visible part of the player. </summary>
     public MeshFilter sprite;
 
+    /// <summary> The energy bar in the UI. </summary>
     public EnergyBar energyBar;
+
+    /// <summary> The camera with the player, used for grappling point grabbing. </summary>
+    public Camera playerCamera;
+
+    /// <summary> The prefab for the grapple. </summary>
+    public ConfigurableJoint grapplePrefab;
+
+    /// <summary> The point moved to the grapple point when grappling, contains a joint to swing the player around. </summary>
+    private ConfigurableJoint grapplePoint;
 
     /// <summary> Determines the acceleration of the player. </summary>
     public float moveSpeed;
@@ -24,11 +35,18 @@ public class PlayerController : MonoBehaviour
 
     /// <summary> The point from which to detect if the ground is nearby, used for isGrounded checks. </summary>
     public Transform groundCast;
+
     /// <summary> The distance the ground has to be be within the casting point to be considered grounded. </summary>
     public float groundCheckDist;
 
+    /// <summary> The distance a grapple point has to be within the mouse to be considered usable for a grapple </summary>
+    public float grappleCheckDist;
+
     /// <summary> The collision layer that indicates something is the ground, used for isGrounded checks. </summary>
     public LayerMask groundLayer;
+
+    /// <summary> The collision layer that indicates something can be grappled on. </summary>
+    public LayerMask grappleLayer;
 
     /// <summary> Current gravity on the player, default is unity's current gravity </summary>
     public Vector3 curGravity = Physics.gravity;
@@ -51,7 +69,6 @@ public class PlayerController : MonoBehaviour
 
     /// <summary> Is the player on the ground? recomputed every physics frame. </summary>
     private bool isGrounded;
-
 
     /// <summary> Is the player current ragdolled? Recalculated every time energy changes. </summary>
     private bool isRagdolled = false;
@@ -82,6 +99,19 @@ public class PlayerController : MonoBehaviour
     {
         unProcessedJump |= Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow); // Input.GetKeyDown has to be handled in the Update() function
         unProcessedDash |= Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
+        {
+            toggleGrapple(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            toggleGrapple(false);
+        }
+        if (grapplePoint != null)
+        {
+            grapplePoint.GetComponentInChildren<LineRenderer>().SetPosition(1, rb.transform.position);
+        }
     }
 
     private void FixedUpdate()
@@ -175,6 +205,32 @@ public class PlayerController : MonoBehaviour
         sprite.transform.localScale = workingScale;
         facingRight = !facingRight;
     }
+
+    private void toggleGrapple(bool grapple)
+    {
+        if (grapple)
+        {
+            Vector3 grapplePos = getScreenPoint();
+            grapplePoint = Instantiate(grapplePrefab, grapplePos, new Quaternion());
+            grapplePoint.connectedBody = rb;
+            SoftJointLimit sjl = new(){ limit = (grapplePos - rb.transform.position).magnitude };
+            grapplePoint.linearLimit = sjl;
+
+            grapplePoint.GetComponentInChildren<LineRenderer>().SetPositions(new Vector3[2]{grapplePos, rb.transform.position});
+        } else
+        {
+            if (grapplePoint) Destroy(grapplePoint.transform.gameObject);
+        }
+    }
+
+    private Vector3 getScreenPoint()
+    {
+        Vector3 point = playerCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -playerCamera.transform.localPosition.z));
+        Debug.Log(point);
+        return point;
+    }
+
+    private bool CheckGrapple() => Physics.OverlapSphere(getScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
 
     private void GroundedCheck() => isGrounded = Physics.OverlapSphere(groundCast.position, groundCheckDist, groundLayer).Length > 0;
 
