@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2442218882490116851}
   - component: {fileID: 3289243282333136670}
   - component: {fileID: 767329667108666705}
+  - component: {fileID: 6250821978258854585}
+  - component: {fileID: 8077389808515596366}
   m_Layer: 0
   m_Name: end of level
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1160871943492522830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 188.49, y: 18.64, z: 2.5}
+  m_LocalPosition: {x: 188.49, y: 18.64, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99,9 +101,36 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6250821978258854585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160871943492522830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5593d16ec12ae84aa6aed2e8bcadf10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTo: {fileID: 0}
+--- !u!114 &8077389808515596366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160871943492522830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c345b22f5b7d74a8c2282463194905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refillAmmount: 9
+  deleteOnUse: 0

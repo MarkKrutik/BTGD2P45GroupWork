@@ -85,6 +85,16 @@ public class PlayerController : MonoBehaviour
     /// <summary> Is there a dash stored in the buffer waiting to be processed on the next physics frame? </summary>
     private bool unProcessedDash = false;
 
+    /// <summary>
+    /// The maximum health for the player, for whenever the player dies.
+    /// </summary>
+    public int maxHealth = 3;
+
+    /// <summary>
+    /// the player's current health
+    /// </summary>
+    public int health = 3;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -102,11 +112,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
         {
-            toggleGrapple(true);
+            ToggleGrapple(true);
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            toggleGrapple(false);
+            ToggleGrapple(false);
         }
         if (grapplePoint != null)
         {
@@ -206,11 +216,11 @@ public class PlayerController : MonoBehaviour
         facingRight = !facingRight;
     }
 
-    private void toggleGrapple(bool grapple)
+    private void ToggleGrapple(bool grapple)
     {
         if (grapple)
         {
-            Vector3 grapplePos = getScreenPoint();
+            Vector3 grapplePos = GetScreenPoint();
             grapplePoint = Instantiate(grapplePrefab, grapplePos, new Quaternion());
             grapplePoint.connectedBody = rb;
             SoftJointLimit sjl = new(){ limit = (grapplePos - rb.transform.position).magnitude };
@@ -223,14 +233,30 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private Vector3 getScreenPoint()
+    private void TakeDamage(int damage)
+    {
+        health = Mathf.Max(0, damage);
+        if (health <= 0) Die();
+    }
+
+    private void Die()
+    {
+        //TODO: write this code
+    }
+
+    public void SetGravity(Vector3 gravity)
+    {
+        curGravity = gravity;
+    }
+
+    private Vector3 GetScreenPoint()
     {
         Vector3 point = playerCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -playerCamera.transform.localPosition.z));
         Debug.Log(point);
         return point;
     }
 
-    private bool CheckGrapple() => Physics.OverlapSphere(getScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
+    private bool CheckGrapple() => Physics.OverlapSphere(GetScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
 
     private void GroundedCheck() => isGrounded = Physics.OverlapSphere(groundCast.position, groundCheckDist, groundLayer).Length > 0;
 

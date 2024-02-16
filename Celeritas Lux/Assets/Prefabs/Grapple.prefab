@@ -150,8 +150,8 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
+  m_XMotion: 1
+  m_YMotion: 1
   m_ZMotion: 0
   m_AngularXMotion: 2
   m_AngularYMotion: 2
