@@ -88,16 +88,17 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// The maximum health for the player, for whenever the player dies.
     /// </summary>
-    public int maxHealth = 3;
+    public int maxHealth = 1;
 
     /// <summary>
     /// the player's current health
     /// </summary>
-    public int health = 3;
+    public int health;
 
     // Start is called before the first frame update
     private void Start()
     {
+        health = maxHealth;
         curEnergy = maxEnergy;
         ToggleRagdoll(false);
         energyBar.SetMaxEnergy(maxEnergy);
@@ -110,6 +111,10 @@ public class PlayerController : MonoBehaviour
         unProcessedJump |= Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow); // Input.GetKeyDown has to be handled in the Update() function
         unProcessedDash |= Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
 
+        if (grapplePoint != null) grapplePoint.GetComponentInChildren<LineRenderer>().SetPosition(1, rb.transform.position);
+
+        if (isRagdolled) return;
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
         {
             ToggleGrapple(true);
@@ -117,10 +122,6 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             ToggleGrapple(false);
-        }
-        if (grapplePoint != null)
-        {
-            grapplePoint.GetComponentInChildren<LineRenderer>().SetPosition(1, rb.transform.position);
         }
     }
 
@@ -233,14 +234,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
-        health = Mathf.Max(0, damage);
+        health = Mathf.Max(0, health - damage);
+        Debug.Log("Ouch!");
         if (health <= 0) Die();
     }
 
     private void Die()
     {
+        Debug.Log("Dead!");
+        ToggleRagdoll(true);
         //TODO: write this code
     }
 
