@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3658456453332221468}
   - component: {fileID: 6984211119483570161}
   - component: {fileID: 664371915636440243}
+  - component: {fileID: 5992159556807895726}
   m_Layer: 0
   m_Name: High_Energy_Area
   m_TagString: Untagged
@@ -105,3 +106,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5992159556807895726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228817668675462939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c345b22f5b7d74a8c2282463194905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refillAmmount: 5
+  deleteOnUse: 0
+  constantRefill: 1
