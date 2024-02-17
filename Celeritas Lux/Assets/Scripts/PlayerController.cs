@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,7 +13,17 @@ public class PlayerController : MonoBehaviour
     /// <summary> The visible part of the player. </summary>
     public MeshFilter sprite;
 
+    /// <summary> The energy bar in the UI. </summary>
     public EnergyBar energyBar;
+
+    /// <summary> The camera with the player, used for grappling point grabbing. </summary>
+    public Camera playerCamera;
+
+    /// <summary> The prefab for the grapple. </summary>
+    public ConfigurableJoint grapplePrefab;
+
+    /// <summary> The point moved to the grapple point when grappling, contains a joint to swing the player around. </summary>
+    private ConfigurableJoint grapplePoint;
 
     /// <summary> Determines the acceleration of the player. </summary>
     public float moveSpeed;
@@ -24,11 +36,18 @@ public class PlayerController : MonoBehaviour
 
     /// <summary> The point from which to detect if the ground is nearby, used for isGrounded checks. </summary>
     public Transform groundCast;
+
     /// <summary> The distance the ground has to be be within the casting point to be considered grounded. </summary>
     public float groundCheckDist;
 
+    /// <summary> The distance a grapple point has to be within the mouse to be considered usable for a grapple </summary>
+    public float grappleCheckDist;
+
     /// <summary> The collision layer that indicates something is the ground, used for isGrounded checks. </summary>
     public LayerMask groundLayer;
+
+    /// <summary> The collision layer that indicates something can be grappled on. </summary>
+    public LayerMask grappleLayer;
 
     /// <summary> Current gravity on the player, default is unity's current gravity </summary>
     public Vector3 curGravity = Physics.gravity;
@@ -45,6 +64,9 @@ public class PlayerController : MonoBehaviour
     /// <summary> The cost in energy to use a dash, flat rate </summary>
     public float dashCost = 3;
 
+    /// <summary> Where to respawn the player if they die. </summary>
+    public Vector3 checkpointPosition;
+
 
     /// <summary> Is the player currently facing right? if false, then facing left. </summary>
     private bool facingRight = true;
@@ -52,9 +74,11 @@ public class PlayerController : MonoBehaviour
     /// <summary> Is the player on the ground? recomputed every physics frame. </summary>
     private bool isGrounded;
 
-
     /// <summary> Is the player current ragdolled? Recalculated every time energy changes. </summary>
     private bool isRagdolled = false;
+
+    /// <summary> Is the player currently dashing? </summary>
+    private bool curDashing = false;
 
     /// <summary> The current energy the player has. </summary>
     private float curEnergy;
@@ -68,9 +92,20 @@ public class PlayerController : MonoBehaviour
     /// <summary> Is there a dash stored in the buffer waiting to be processed on the next physics frame? </summary>
     private bool unProcessedDash = false;
 
+    /// <summary>
+    /// The maximum health for the player, for whenever the player dies.
+    /// </summary>
+    public int maxHealth = 1;
+
+    /// <summary>
+    /// the player's current health
+    /// </summary>
+    public int health;
+
     // Start is called before the first frame update
     private void Start()
     {
+        health = maxHealth;
         curEnergy = maxEnergy;
         ToggleRagdoll(false);
         energyBar.SetMaxEnergy(maxEnergy);
@@ -82,6 +117,19 @@ public class PlayerController : MonoBehaviour
     {
         unProcessedJump |= Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow); // Input.GetKeyDown has to be handled in the Update() function
         unProcessedDash |= Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
+
+        if (grapplePoint != null) grapplePoint.GetComponentInChildren<LineRenderer>().SetPosition(1, rb.transform.position);
+
+        if (isRagdolled) return;
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
+        {
+            ToggleGrapple(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            ToggleGrapple(false);
+        }
     }
 
     private void FixedUpdate()
@@ -160,14 +208,6 @@ public class PlayerController : MonoBehaviour
         else if (facingRight && moveInput.x < 0) Flip(); // was right now left, so flip
     }
 
-    private void Dash()
-    {
-        if (isRagdolled) return;
-        if (rb.velocity.sqrMagnitude < 4) return;
-        ChangePower(-dashCost);
-        rb.AddForce(rb.velocity.normalized * dashForce, ForceMode.Impulse);
-    }
-
     private void Flip()
     {
         Vector3 workingScale = sprite.transform.localScale;
@@ -175,6 +215,79 @@ public class PlayerController : MonoBehaviour
         sprite.transform.localScale = workingScale;
         facingRight = !facingRight;
     }
+
+    private void ToggleGrapple(bool grapple)
+    {
+        if (grapple)
+        {
+            Vector3 grapplePos = GetScreenPoint();
+            grapplePoint = Instantiate(grapplePrefab, grapplePos, new Quaternion());
+            grapplePoint.connectedBody = rb;
+            SoftJointLimit sjl = new(){ limit = (grapplePos - rb.transform.position).magnitude };
+            grapplePoint.linearLimit = sjl;
+
+            grapplePoint.GetComponentInChildren<LineRenderer>().SetPositions(new Vector3[2]{grapplePos, rb.transform.position});
+        } else
+        {
+            if (grapplePoint) Destroy(grapplePoint.transform.gameObject);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health = Mathf.Max(0, health - damage);
+        Debug.Log("Ouch!");
+        if (health <= 0) Die();
+    }
+
+    private void Die()
+    {
+        Debug.Log("Dead!");
+        ToggleRagdoll(true);
+        StartCoroutine("Respawn");
+    }
+
+    public void SetGravity(Vector3 gravity)
+    {
+        curGravity = gravity;
+    }
+
+    private Vector3 GetScreenPoint()
+    {
+        Vector3 point = playerCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -playerCamera.transform.localPosition.z));
+        Debug.Log(point);
+        return point;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (curDashing && collision.gameObject.GetComponent<Turret>() != null)
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private async void Dash()
+    {
+        if (isRagdolled) return;
+        if (rb.velocity.sqrMagnitude < 4) return;
+        ChangePower(-dashCost);
+        rb.AddForce(rb.velocity.normalized * dashForce, ForceMode.Impulse);
+        curDashing = true;
+        await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
+        curDashing = false;
+    }
+
+    private async void Respawn()
+    {
+        await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
+        gameObject.transform.position = checkpointPosition;
+        ToggleRagdoll(false);
+        health = maxHealth;
+        curEnergy = maxEnergy;
+    }
+
+    private bool CheckGrapple() => Physics.OverlapSphere(GetScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
 
     private void GroundedCheck() => isGrounded = Physics.OverlapSphere(groundCast.position, groundCheckDist, groundLayer).Length > 0;
 
