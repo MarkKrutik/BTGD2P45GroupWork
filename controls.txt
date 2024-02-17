@@ -1,0 +1,4 @@
+A/left - move left
+D/right - move right
+W/up - jump
+shift - dash
