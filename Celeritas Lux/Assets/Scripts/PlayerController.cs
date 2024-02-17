@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -63,6 +64,9 @@ public class PlayerController : MonoBehaviour
     /// <summary> The cost in energy to use a dash, flat rate </summary>
     public float dashCost = 3;
 
+    /// <summary> Where to respawn the player if they die. </summary>
+    public Vector3 checkpointPosition;
+
 
     /// <summary> Is the player currently facing right? if false, then facing left. </summary>
     private bool facingRight = true;
@@ -72,6 +76,9 @@ public class PlayerController : MonoBehaviour
 
     /// <summary> Is the player current ragdolled? Recalculated every time energy changes. </summary>
     private bool isRagdolled = false;
+
+    /// <summary> Is the player currently dashing? </summary>
+    private bool curDashing = false;
 
     /// <summary> The current energy the player has. </summary>
     private float curEnergy;
@@ -201,14 +208,6 @@ public class PlayerController : MonoBehaviour
         else if (facingRight && moveInput.x < 0) Flip(); // was right now left, so flip
     }
 
-    private void Dash()
-    {
-        if (isRagdolled) return;
-        if (rb.velocity.sqrMagnitude < 4) return;
-        ChangePower(-dashCost);
-        rb.AddForce(rb.velocity.normalized * dashForce, ForceMode.Impulse);
-    }
-
     private void Flip()
     {
         Vector3 workingScale = sprite.transform.localScale;
@@ -245,7 +244,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Dead!");
         ToggleRagdoll(true);
-        //TODO: write this code
+        StartCoroutine("Respawn");
     }
 
     public void SetGravity(Vector3 gravity)
@@ -258,6 +257,34 @@ public class PlayerController : MonoBehaviour
         Vector3 point = playerCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -playerCamera.transform.localPosition.z));
         Debug.Log(point);
         return point;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (curDashing && collision.gameObject.GetComponent<Turret>() != null)
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private async void Dash()
+    {
+        if (isRagdolled) return;
+        if (rb.velocity.sqrMagnitude < 4) return;
+        ChangePower(-dashCost);
+        rb.AddForce(rb.velocity.normalized * dashForce, ForceMode.Impulse);
+        curDashing = true;
+        await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
+        curDashing = false;
+    }
+
+    private async void Respawn()
+    {
+        await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
+        gameObject.transform.position = checkpointPosition;
+        ToggleRagdoll(false);
+        health = maxHealth;
+        curEnergy = maxEnergy;
     }
 
     private bool CheckGrapple() => Physics.OverlapSphere(GetScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
