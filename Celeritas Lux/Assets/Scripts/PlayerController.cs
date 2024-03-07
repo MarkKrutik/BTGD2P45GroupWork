@@ -108,6 +108,7 @@ public class PlayerController : MonoBehaviour
         health = maxHealth;
         curEnergy = maxEnergy;
         ToggleRagdoll(false);
+        ToggleGrapple(false);
         energyBar.SetMaxEnergy(maxEnergy);
         energyBar.SetEnergy(curEnergy);
     }
@@ -282,9 +283,7 @@ public class PlayerController : MonoBehaviour
     {
         await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
         gameObject.transform.position = checkpointPosition;
-        ToggleRagdoll(false);
-        health = maxHealth;
-        curEnergy = maxEnergy;
+        Start(); // reset all the properties to default
     }
 
     private bool CheckGrapple() => Physics.OverlapSphere(GetScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
