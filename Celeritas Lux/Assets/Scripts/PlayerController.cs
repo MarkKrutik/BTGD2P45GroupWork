@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     /// <summary> The current energy the player has. </summary>
     private float curEnergy;
-    
+
     /// <summary> The number of jumps in-air the player has done thus far. </summary>
     private int jumpCount;
 
@@ -101,6 +101,12 @@ public class PlayerController : MonoBehaviour
     /// the player's current health
     /// </summary>
     public int health;
+
+    /// <summary>
+    /// is the player currently respawning, used for preventing multi-respawn bug
+    /// </summary>
+    private volatile bool respawning = false;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -138,13 +144,14 @@ public class PlayerController : MonoBehaviour
         GroundedCheck();
         CalculateMovement();
         ApplyGravity();
+        if (checkRagdollDeath()) StartCoroutine("RagdollDeathTimer");
     }
 
     private void Jump()
     {
         if (isRagdolled) return;
         ChangePower(-Mathf.Pow(jumpCostMultiplier, jumpCount) + 1);
-        rb.velocity = new Vector3(rb.velocity.x,0,0);
+        rb.velocity = new Vector3(rb.velocity.x, 0, 0);
         rb.AddForce(jumpHeight * Vector3.up, ForceMode.Impulse);
         jumpCount++;
 
@@ -152,7 +159,7 @@ public class PlayerController : MonoBehaviour
 
     public bool ChangePower(float amount)
     {
-        curEnergy = Mathf.Clamp(curEnergy + amount,0,maxEnergy);
+        curEnergy = Mathf.Clamp(curEnergy + amount, 0, maxEnergy);
         energyBar.SetEnergy(curEnergy);
         Debug.Log("Current Energy: " + curEnergy + ", # of Jumps: " + jumpCount);
         if (curEnergy == 0)
@@ -189,7 +196,7 @@ public class PlayerController : MonoBehaviour
 
 
         if (isGrounded)
-        { 
+        {
             if (rb.velocity.y <= 0) jumpCount = 0;
         }
 
@@ -224,10 +231,10 @@ public class PlayerController : MonoBehaviour
             Vector3 grapplePos = GetScreenPoint();
             grapplePoint = Instantiate(grapplePrefab, grapplePos, new Quaternion());
             grapplePoint.connectedBody = rb;
-            SoftJointLimit sjl = new(){ limit = (grapplePos - rb.transform.position).magnitude };
+            SoftJointLimit sjl = new() { limit = (grapplePos - rb.transform.position).magnitude };
             grapplePoint.linearLimit = sjl;
 
-            grapplePoint.GetComponentInChildren<LineRenderer>().SetPositions(new Vector3[2]{grapplePos, rb.transform.position});
+            grapplePoint.GetComponentInChildren<LineRenderer>().SetPositions(new Vector3[2] { grapplePos, rb.transform.position });
         } else
         {
             if (grapplePoint) Destroy(grapplePoint.transform.gameObject);
@@ -245,7 +252,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Dead!");
         ToggleRagdoll(true);
-        StartCoroutine("Respawn");
+        if (!respawning) StartCoroutine("Respawn");
     }
 
     public void SetGravity(Vector3 gravity)
@@ -281,10 +288,19 @@ public class PlayerController : MonoBehaviour
 
     private async void Respawn()
     {
+        respawning = true; // NOTE: this isn't atomic so there might be leaks, if the player is dying immediately after respawning it's probably this
         await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
         gameObject.transform.position = checkpointPosition;
         Start(); // reset all the properties to default
     }
+
+    private async void RagdollDeathTimer()
+    {
+        await Task.Delay(TimeSpan.FromSeconds(2));
+        if (checkRagdollDeath()) Die();
+    }
+
+    private bool checkRagdollDeath() => (isRagdolled && rb.velocity.magnitude < 1 && isGrounded);
 
     private bool CheckGrapple() => Physics.OverlapSphere(GetScreenPoint(), grappleCheckDist, grappleLayer).Length > 0;
 
