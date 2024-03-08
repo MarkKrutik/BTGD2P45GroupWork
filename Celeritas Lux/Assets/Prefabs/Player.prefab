@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 474464586142480509}
   - component: {fileID: 2537954196872259021}
   - component: {fileID: 3330828485157841312}
+  - component: {fileID: 7824504985263484829}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -469,6 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpCostMultiplier: 2
   curGravity: {x: 0, y: -9.81, z: 0}
+  bufferGravity: {x: Infinity, y: Infinity, z: Infinity}
   jumpHeight: 6
   moveSpeed: 10
   dashForce: 10
@@ -476,6 +478,7 @@ MonoBehaviour:
   groundCheckDist: 0.01
   airControlFactor: 0.3
   dashCost: 3
+  speedCap: 50
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -489,5 +492,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa6afdccf618162469a10a6d2b28ed8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7824504985263484829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132135753806124897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c78617f3db09341a5c9c1705275784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

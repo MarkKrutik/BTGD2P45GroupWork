@@ -1494,7 +1494,7 @@ PrefabInstance:
     - target: {fileID: 6026035267743653726, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6026035267743653726, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
         type: 3}
@@ -1571,6 +1571,11 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7824504985263484829, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1555025004}
     - target: {fileID: 8992996372569044923, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
         type: 3}
       propertyPath: m_Layer
@@ -3726,7 +3731,7 @@ PrefabInstance:
     - target: {fileID: 7894156867133761146, guid: 94750017c56647144a8fe7f5a92aad45,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850990585556941800, guid: 94750017c56647144a8fe7f5a92aad45,
         type: 3}
