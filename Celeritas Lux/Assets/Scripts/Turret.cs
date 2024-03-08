@@ -41,6 +41,7 @@ public class Turret : MonoBehaviour
     private void Shoot()
     {
         Bullet firedBullet = Instantiate(bullet,startPos); {
+            firedBullet.transform.SetParent(this.transform.parent);
             firedBullet.lifetime = 5;
             firedBullet.moveDir = (target.position - this.transform.position).normalized;
         };
