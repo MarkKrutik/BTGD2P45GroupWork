@@ -16,7 +16,12 @@ public class GrappleController : MonoBehaviour
     private ConfigurableJoint grapplePoint;
 
     [SerializeField]
+    private float reelInSpeed = 0.001f;
+
+    [SerializeField]
     private Material ropeMaterial;
+
+    private bool reelingIn = false;
 
     private RagdollController ragdollController;
     private CameraController cameraController;
@@ -36,6 +41,7 @@ public class GrappleController : MonoBehaviour
 
         if (ragdollController.Ragdolled()) return;
 
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
         {
             ToggleGrapple(true);
@@ -44,12 +50,33 @@ public class GrappleController : MonoBehaviour
         {
             ToggleGrapple(false);
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1) && CheckGrapple())
+        {
+            reelingIn = true;
+        } else if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            reelingIn = false;
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (reelingIn) { reelInGrapple(); }
+    }
+
+    public void reelInGrapple()
+    {
+        SoftJointLimit sjl = new() { limit = Mathf.Max(grapplePoint.linearLimit.limit - reelInSpeed,5) };
+        grapplePoint.linearLimit = sjl;
     }
 
     public void ToggleGrapple(bool grapple)
     {
         if (grapple)
         {
+            reelingIn = false;
 
             Vector3 playerTransform = transform.position;
 
