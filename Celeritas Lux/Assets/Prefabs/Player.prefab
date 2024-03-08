@@ -426,6 +426,7 @@ MonoBehaviour:
     m_Bits: 2048
   grapplePrefab: {fileID: 4541541263917967332, guid: 2023dd4cb9174014594fafe846b8c15e,
     type: 3}
+  ropeMaterial: {fileID: 2100000, guid: 24cacd853b3588241ad3c67ebd4d10a7, type: 2}
 --- !u!114 &474464586142480509
 MonoBehaviour:
   m_ObjectHideFlags: 0

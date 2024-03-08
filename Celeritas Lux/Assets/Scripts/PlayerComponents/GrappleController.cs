@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GrappleController : MonoBehaviour
@@ -11,12 +12,11 @@ public class GrappleController : MonoBehaviour
     /// <summary> The collision layer that indicates something can be grappled on. </summary>
     public LayerMask grappleLayer;
 
-    /// <summary> The prefab for the grapple. </summary>
-    public ConfigurableJoint grapplePrefab;
-
     /// <summary> The point moved to the grapple point when grappling, contains a joint to swing the player around. </summary>
     private ConfigurableJoint grapplePoint;
 
+    [SerializeField]
+    private Material ropeMaterial;
 
     private RagdollController ragdollController;
     private CameraController cameraController;
@@ -32,7 +32,7 @@ public class GrappleController : MonoBehaviour
 
     private void Update()
     {
-        if (grapplePoint != null) grapplePoint.GetComponentInChildren<LineRenderer>().SetPosition(1, gameObject.transform.position);
+        if (grapplePoint != null) grapplePoint.gameObject.GetComponent<LineRenderer>().SetPosition(1, gameObject.transform.position);
 
         if (ragdollController.Ragdolled()) return;
 
@@ -50,17 +50,42 @@ public class GrappleController : MonoBehaviour
     {
         if (grapple)
         {
-            Vector3 grapplePos = cameraController.GetGlobalMousePosition();
-            grapplePoint = Instantiate(grapplePrefab, grapplePos, new Quaternion());
+
+            Vector3 playerTransform = transform.position;
+
+            /*
+             * The line above is disgusting, but ConfigurableJoints are full of hate. If you can find a better way please do so.
+             *
+             * Time spent dealing with ConfigurableJoints:
+             * 40 minutes
+             */
+
+
+            Collider grappledObject = Physics.OverlapSphere(cameraController.GetGlobalMousePosition(), grappleCheckDist, grappleLayer)[0];
+
+            transform.position = grappledObject.transform.position;
+
+            grapplePoint = grappledObject.AddComponent<ConfigurableJoint>();
             grapplePoint.connectedBody = gameObject.GetComponent<Rigidbody>();
-            SoftJointLimit sjl = new() { limit = (grapplePos - gameObject.transform.position).magnitude };
+            grapplePoint.xMotion = ConfigurableJointMotion.Limited;
+            grapplePoint.yMotion = ConfigurableJointMotion.Limited;
+            grapplePoint.zMotion = ConfigurableJointMotion.Limited;
+            SoftJointLimit sjl = new() { limit = (grapplePoint.transform.position - playerTransform).magnitude };
             grapplePoint.linearLimit = sjl;
 
-            grapplePoint.GetComponentInChildren<LineRenderer>().SetPositions(new Vector3[2] { grapplePos, gameObject.transform.position });
+            transform.position = playerTransform;
+
+            grapplePoint.gameObject.AddComponent<LineRenderer>().SetPositions(new Vector3[2] { grapplePoint.transform.position, gameObject.transform.position });
+            grapplePoint.gameObject.GetComponent<LineRenderer>().SetMaterials(new List<Material>() {ropeMaterial});
+            grapplePoint.gameObject.GetComponent<LineRenderer>().widthMultiplier = 0.05f;
         }
         else
         {
-            if (grapplePoint) Destroy(grapplePoint.transform.gameObject);
+            if (grapplePoint)
+            {
+                if (grapplePoint.gameObject.GetComponent<LineRenderer>()) Destroy(grapplePoint.gameObject.GetComponent<LineRenderer>());
+                Destroy(grapplePoint);
+            }
         }
     }
 }
