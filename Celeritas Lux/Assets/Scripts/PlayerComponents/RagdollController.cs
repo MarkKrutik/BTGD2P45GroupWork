@@ -12,6 +12,7 @@ public class RagdollController : MonoBehaviour
     private Rigidbody rigidbody;
     private HealthManager healthManager;
     private MovementController movementController;
+    private GrappleController grappleController;
 
 
     private void Start()
@@ -19,12 +20,13 @@ public class RagdollController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         healthManager = GetComponent<HealthManager>();
         movementController = GetComponent<MovementController>();
+        grappleController = GetComponent<GrappleController>();
         ToggleRagdoll(false);
     }
 
     private void FixedUpdate()
     {
-        if (checkRagdollDeath()) StartCoroutine("RagdollDeathTimer");
+        if (checkRagdollDeath()) StartCoroutine(nameof(RagdollDeathTimer));
     }
 
     private async void RagdollDeathTimer()
@@ -39,6 +41,7 @@ public class RagdollController : MonoBehaviour
     {
         if (toggle)
         {
+            grappleController.ToggleGrapple(false);
             rigidbody.AddTorque(new Vector3(0, 0, UnityEngine.Random.Range(-1, 1)), ForceMode.VelocityChange); // TODO: verify this does anything
             rigidbody.constraints &= ~RigidbodyConstraints.FreezeRotationZ; // flip bit off
         }

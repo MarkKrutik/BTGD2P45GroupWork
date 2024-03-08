@@ -25,6 +25,9 @@ public class MovementController : MonoBehaviour
     /// <summary> Is the player currently in the air from jumping. </summary>
     private bool jumpAirBuffer = false;
 
+    /// <summary> Has the player already dashed in the air? </summary>
+    private bool dashAirBuffer = false;
+
     /// <summary> Determines the acceleration of the player. </summary>
     public float moveSpeed;
 
@@ -61,6 +64,9 @@ public class MovementController : MonoBehaviour
     /// <summary> The cost in energy to use a dash, flat rate </summary>
     public float dashCost = 3;
 
+    /// <summary> The maximum speed the player can reach at any given time. </summary>
+    public float speedCap = 50f;
+
     /// <summary> The collision layer that indicates something is the ground, used for isGrounded checks. </summary>
     public LayerMask groundLayer;
 
@@ -88,7 +94,7 @@ public class MovementController : MonoBehaviour
     private void Update()
     {
         processJump(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)); // Input.GetKeyDown has to be handled in the Update() function
-        processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) ||Input.GetKeyDown(KeyCode.Space));
+        processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.Space));
 
         if (ragdollController.Ragdolled()) return;
 
@@ -130,7 +136,11 @@ public class MovementController : MonoBehaviour
 
         if (isGrounded)
         {
-            if (rigidbody.velocity.y <= 0) jumpCount = 0;
+            if (rigidbody.velocity.y <= 0)
+            {
+                jumpCount = 0;
+                dashAirBuffer = false;
+            }
         }
 
         rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), 0, 0), ForceMode.Acceleration);
@@ -146,6 +156,7 @@ public class MovementController : MonoBehaviour
             rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * 3, 0, 0), ForceMode.Acceleration);
         }
 
+        if (rigidbody.velocity.sqrMagnitude > speedCap*speedCap) rigidbody.velocity = rigidbody.velocity.normalized * speedCap;
         
         if (!animationController.isFacingRight() && moveInput.x > 0) animationController.Flip(); // was left now right, so flip
         else if (animationController.isFacingRight() && moveInput.x < 0) animationController.Flip(); // was right now left, so flip
@@ -153,10 +164,12 @@ public class MovementController : MonoBehaviour
 
     private async void Dash()
     {
+        if (dashAirBuffer) return;
         if (ragdollController.Ragdolled()) return;
         if (rigidbody.velocity.sqrMagnitude < 4) return;
         energyManager.ChangePower(-dashCost);
-        rigidbody.AddForce(rigidbody.velocity.normalized * dashForce, ForceMode.Impulse);
+        rigidbody.AddForce(new Vector3(rigidbody.velocity.x,0,0).normalized * dashForce, ForceMode.Impulse);
+        dashAirBuffer = true;
         curDashing = true;
         await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
         curDashing = false;
