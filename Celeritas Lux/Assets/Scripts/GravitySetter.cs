@@ -7,13 +7,14 @@ public class GravitySetter : MonoBehaviour
 
     public Vector3 gravity = Physics.gravity;
 
-    private Vector3 playerGravity;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<MovementController>() != null)
         {
-            playerGravity = other.gameObject.GetComponent<MovementController>().curGravity;
+            if (other.gameObject.GetComponent<MovementController>().bufferGravity == Vector3.positiveInfinity) 
+            {
+                other.gameObject.GetComponent<MovementController>().bufferGravity = other.gameObject.GetComponent<MovementController>().curGravity;
+            }
             other.gameObject.GetComponent<MovementController>().SetGravity(gravity);
         }
     }
@@ -22,7 +23,8 @@ public class GravitySetter : MonoBehaviour
     {
         if (other.gameObject.GetComponent<MovementController>() != null)
         {
-            other.gameObject.GetComponent<MovementController>().SetGravity(playerGravity);
+            other.gameObject.GetComponent<MovementController>().SetGravity(other.gameObject.GetComponent<MovementController>().bufferGravity);
+            other.gameObject.GetComponent<MovementController>().bufferGravity = Vector3.positiveInfinity;
         }
     }
 }

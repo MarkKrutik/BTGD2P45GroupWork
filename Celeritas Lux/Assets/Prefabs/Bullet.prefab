@@ -122,6 +122,7 @@ MonoBehaviour:
   rb: {fileID: 1787645452651929160}
   moveDir: {x: 0, y: 0, z: 0}
   lifetime: 0
+  damage: 1
 --- !u!54 &1787645452651929160
 Rigidbody:
   m_ObjectHideFlags: 0

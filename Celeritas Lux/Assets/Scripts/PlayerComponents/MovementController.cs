@@ -18,6 +18,7 @@ public class MovementController : MonoBehaviour
     /// <summary> Current gravity on the player, default is unity's current gravity </summary>
     public Vector3 curGravity = Physics.gravity;
 
+    public Vector3 bufferGravity = Vector3.positiveInfinity;
 
     /// <summary> Determines the amount of force applied when the player jumps </summary>
     public float jumpHeight;
@@ -87,7 +88,12 @@ public class MovementController : MonoBehaviour
     }
 
     public bool Grounded() => isGrounded;
-    public void SetGravity(Vector3 gravity) => curGravity = gravity;
+    public void SetGravity(Vector3 gravity)
+    {
+        if (gravity == Vector3.positiveInfinity) gravity = Physics.gravity;
+        curGravity = gravity;
+    }
+
     private void ApplyGravity() => rigidbody.AddForce(curGravity, ForceMode.Acceleration);
     private void GroundedCheck() => isGrounded = Physics.OverlapSphere(groundCast.position, groundCheckDist, groundLayer).Length > 0;
 
@@ -145,7 +151,7 @@ public class MovementController : MonoBehaviour
 
         rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), 0, 0), ForceMode.Acceleration);
 
-        if (moveInput.y > 0) Jump();
+        if (moveInput.y > 0 && jumpCount <= 2) Jump();
 
 
         if (unProcessedDash) Dash();
