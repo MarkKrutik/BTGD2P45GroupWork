@@ -133,7 +133,7 @@ public class MovementController : MonoBehaviour
             if (rigidbody.velocity.y <= 0) jumpCount = 0;
         }
 
-        rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), rigidbody.velocity.y, 0), ForceMode.Acceleration);
+        rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), 0, 0), ForceMode.Acceleration);
 
         if (moveInput.y > 0) Jump();
 
@@ -143,7 +143,7 @@ public class MovementController : MonoBehaviour
 
         if (moveInput.x * rigidbody.velocity.x < 0) // if the intended velocity and current velocity are opposite directions (player wants to go other way), slow down faster 
         {
-            rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * 3, rigidbody.velocity.y, 0), ForceMode.Acceleration);
+            rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * 3, 0, 0), ForceMode.Acceleration);
         }
 
         if (!animationController.isFacingRight() && moveInput.x > 0) animationController.Flip(); // was left now right, so flip

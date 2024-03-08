@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 3330828485157841312}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpCostMultiplier: 2
   curGravity: {x: 0, y: -9.81, z: 0}
-  jumpHeight: 4
+  jumpHeight: 6
   moveSpeed: 10
   dashForce: 10
   groundCast: {fileID: 4647042190473513312}
