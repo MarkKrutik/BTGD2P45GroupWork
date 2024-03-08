@@ -10,7 +10,7 @@ public class EnergyPickup : MonoBehaviour
     public bool deleteOnUse = false;
     public bool constantRefill = false;
 
-    private PlayerController curPlayer;
+    private EnergyManager curPlayer;
 
     private void Update() 
     {
@@ -19,13 +19,13 @@ public class EnergyPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerController>() != null)
+        if (other.gameObject.GetComponent<EnergyManager>() != null)
         {
-            other.gameObject.GetComponent<PlayerController>().ChangePower(refillAmmount);
+            other.gameObject.GetComponent<EnergyManager>().ChangePower(refillAmmount);
             if (deleteOnUse) Destroy(this.gameObject);
-            if (constantRefill) curPlayer = other.gameObject.GetComponent<PlayerController>();
+            if (constantRefill) curPlayer = other.gameObject.GetComponent<EnergyManager>();
         }
     }
 
-    private void OnTriggerExit(Collider other) => curPlayer = (other.gameObject.GetComponent<PlayerController>() != null) ? null : curPlayer;
+    private void OnTriggerExit(Collider other) => curPlayer = (other.gameObject.GetComponent<EnergyManager>() != null) ? null : curPlayer;
 }

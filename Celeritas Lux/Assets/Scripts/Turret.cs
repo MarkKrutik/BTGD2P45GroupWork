@@ -49,7 +49,7 @@ public class Turret : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerController>() != null) {
+        if (other.gameObject.GetComponent<MovementController>() != null) {
             active = true;
             deltaReload = detectionDelay;
         }
@@ -57,6 +57,6 @@ public class Turret : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        active = (other.gameObject.GetComponent<PlayerController>() == null) && active; // set active false if player exits
+        active = (other.gameObject.GetComponent<MovementController>() == null) && active; // set active false if player exits
     }
 }

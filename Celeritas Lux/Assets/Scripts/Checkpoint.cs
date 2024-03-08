@@ -6,9 +6,9 @@ public class Checkpoint : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerController>() != null)
+        if (other.gameObject.GetComponent<HealthManager>() != null)
         {
-            other.gameObject.GetComponent<PlayerController>().checkpointPosition = this.transform.position;
+            other.gameObject.GetComponent<HealthManager>().checkpointPosition = this.transform.position;
         }
     }
 }

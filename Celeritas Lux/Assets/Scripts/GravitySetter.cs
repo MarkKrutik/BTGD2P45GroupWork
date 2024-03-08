@@ -11,18 +11,18 @@ public class GravitySetter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerController>() != null)
+        if (other.gameObject.GetComponent<MovementController>() != null)
         {
-            playerGravity = other.gameObject.GetComponent<PlayerController>().curGravity;
-            other.gameObject.GetComponent<PlayerController>().SetGravity(gravity);
+            playerGravity = other.gameObject.GetComponent<MovementController>().curGravity;
+            other.gameObject.GetComponent<MovementController>().SetGravity(gravity);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerController>() != null)
+        if (other.gameObject.GetComponent<MovementController>() != null)
         {
-            other.gameObject.GetComponent<PlayerController>().SetGravity(playerGravity);
+            other.gameObject.GetComponent<MovementController>().SetGravity(playerGravity);
         }
     }
 }

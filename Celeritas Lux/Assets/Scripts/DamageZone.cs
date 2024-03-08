@@ -9,9 +9,9 @@ public class DamageZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerController>() != null)
+        if (other.gameObject.GetComponent<HealthManager>() != null)
         {
-            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            other.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
         }
     }
 }
