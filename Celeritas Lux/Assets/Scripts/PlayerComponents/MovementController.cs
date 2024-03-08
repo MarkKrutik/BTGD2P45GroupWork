@@ -88,7 +88,7 @@ public class MovementController : MonoBehaviour
     private void Update()
     {
         processJump(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)); // Input.GetKeyDown has to be handled in the Update() function
-        processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift));
+        processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) ||Input.GetKeyDown(KeyCode.Space));
 
         if (ragdollController.Ragdolled()) return;
 
@@ -146,6 +146,7 @@ public class MovementController : MonoBehaviour
             rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * 3, 0, 0), ForceMode.Acceleration);
         }
 
+        
         if (!animationController.isFacingRight() && moveInput.x > 0) animationController.Flip(); // was left now right, so flip
         else if (animationController.isFacingRight() && moveInput.x < 0) animationController.Flip(); // was right now left, so flip
     }
