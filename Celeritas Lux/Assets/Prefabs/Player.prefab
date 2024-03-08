@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 1722382786915199517}
   - component: {fileID: 1658446471623015104}
   - component: {fileID: 5366501543678736503}
+  - component: {fileID: 4566268267231015577}
   - component: {fileID: 6777447715814440368}
   - component: {fileID: 1516321204179866477}
   - component: {fileID: 994334833619703248}
@@ -382,6 +383,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 6847810386918355773}
+--- !u!114 &4566268267231015577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132135753806124897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20eb1bb779f85d4aaa9a5dcda918271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: {fileID: 0}
 --- !u!114 &6777447715814440368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,8 +438,6 @@ MonoBehaviour:
   grappleLayer:
     serializedVersion: 2
     m_Bits: 2048
-  grapplePrefab: {fileID: 4541541263917967332, guid: 2023dd4cb9174014594fafe846b8c15e,
-    type: 3}
   ropeMaterial: {fileID: 2100000, guid: 24cacd853b3588241ad3c67ebd4d10a7, type: 2}
 --- !u!114 &474464586142480509
 MonoBehaviour:

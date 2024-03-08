@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4377156568299093082}
   - component: {fileID: 1897283784412957073}
   - component: {fileID: -3387821272405021223}
-  - component: {fileID: 2283709493434990867}
+  - component: {fileID: 8079460888047409960}
   m_Layer: 0
   m_Name: Battery_Pickup
   m_TagString: Untagged
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2283709493434990867
+--- !u!114 &8079460888047409960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,9 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 836139503796794922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c345b22f5b7d74a8c2282463194905, type: 3}
+  m_Script: {fileID: 11500000, guid: a6bdf38250c09ec489b24e8031206046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refillAmmount: 0
-  deleteOnUse: 1
-  constantRefill: 0
