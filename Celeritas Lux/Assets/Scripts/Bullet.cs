@@ -22,9 +22,9 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<PlayerController>() != null)
+        if (collision.gameObject.GetComponent<HealthManager>() != null)
         {
-            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            collision.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
             Destroy(this.gameObject);
         }
 
