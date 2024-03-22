@@ -18,7 +18,11 @@ public class MovementController : MonoBehaviour
     /// <summary> Current gravity on the player, default is unity's current gravity </summary>
     public Vector3 curGravity = Physics.gravity;
 
-    public Vector3 bufferGravity = Vector3.positiveInfinity;
+    /// <summary> The player's original gravity, set when player enters gravity zone </summary>
+    public Vector3 bufferGravity = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
+
+    /// <summary> The number of gravity zones the player is currently in, used for transitions </summary>
+    public int numGravityZones = 0;
 
     /// <summary> Determines the amount of force applied when the player jumps </summary>
     public float jumpHeight;
