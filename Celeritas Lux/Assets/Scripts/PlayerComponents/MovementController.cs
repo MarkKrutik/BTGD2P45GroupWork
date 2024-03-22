@@ -58,7 +58,10 @@ public class MovementController : MonoBehaviour
     private bool isGrounded;
 
     /// <summary> The point from which to detect if the ground is nearby, used for isGrounded checks. </summary>
-    public Transform groundCast;
+    public Transform groundCast1;
+
+    /// <summary> The point from which to detect if the ground is nearby, used for isGrounded checks. </summary>
+    public Transform groundCast2;
 
     /// <summary> The distance the ground has to be be within the casting point to be considered grounded. </summary>
     public float groundCheckDist;
@@ -99,7 +102,7 @@ public class MovementController : MonoBehaviour
     }
 
     private void ApplyGravity() => rigidbody.AddForce(curGravity, ForceMode.Acceleration);
-    private void GroundedCheck() => isGrounded = Physics.OverlapSphere(groundCast.position, groundCheckDist, groundLayer).Length > 0;
+    private void GroundedCheck() => isGrounded = Physics.OverlapCapsule(groundCast1.position, groundCast2.position, groundCheckDist, groundLayer).Length > 0;
 
     private void Update()
     {

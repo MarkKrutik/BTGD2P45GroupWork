@@ -233,6 +233,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb29dfb027787642be421bd3ee273e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6497568670731998264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4858470133269646226}
+  m_Layer: 0
+  m_Name: GroundCast2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4858470133269646226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497568670731998264}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.45, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6026035267743653726}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8992996372569044923
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +289,7 @@ Transform:
   m_GameObject: {fileID: 8992996372569044923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: -0.45, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -273,6 +304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6026035267743653726}
+  - component: {fileID: 2154991057617612344}
   - component: {fileID: 212733664984613531}
   - component: {fileID: 1722382786915199517}
   - component: {fileID: 1658446471623015104}
@@ -307,9 +339,33 @@ Transform:
   m_Children:
   - {fileID: 3681147227989301857}
   - {fileID: 4647042190473513312}
+  - {fileID: 4858470133269646226}
   - {fileID: 922674106749133718}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2154991057617612344
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132135753806124897}
+  m_Material: {fileID: 13400000, guid: 75501225d6a19ff47b425c00138af664, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &212733664984613531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -327,7 +383,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
@@ -439,6 +495,7 @@ MonoBehaviour:
   grappleLayer:
     serializedVersion: 2
     m_Bits: 2048
+  reelInSpeed: 0.001
   ropeMaterial: {fileID: 2100000, guid: 24cacd853b3588241ad3c67ebd4d10a7, type: 2}
 --- !u!114 &474464586142480509
 MonoBehaviour:
@@ -471,10 +528,12 @@ MonoBehaviour:
   jumpCostMultiplier: 2
   curGravity: {x: 0, y: -9.81, z: 0}
   bufferGravity: {x: Infinity, y: Infinity, z: Infinity}
+  numGravityZones: 0
   jumpHeight: 6
   moveSpeed: 10
   dashForce: 10
-  groundCast: {fileID: 4647042190473513312}
+  groundCast1: {fileID: 4647042190473513312}
+  groundCast2: {fileID: 4858470133269646226}
   groundCheckDist: 0.01
   airControlFactor: 0.3
   dashCost: 3
@@ -506,3 +565,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c78617f3db09341a5c9c1705275784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
