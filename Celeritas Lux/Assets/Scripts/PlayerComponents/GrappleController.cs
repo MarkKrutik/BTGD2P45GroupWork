@@ -19,6 +19,9 @@ public class GrappleController : MonoBehaviour
     private float reelInSpeed = 0.001f;
 
     [SerializeField]
+    private float minDistance = 0.1f;
+
+    [SerializeField]
     private Material ropeMaterial;
 
     private bool reelingIn = false;
@@ -68,7 +71,7 @@ public class GrappleController : MonoBehaviour
 
     public void reelInGrapple()
     {
-        SoftJointLimit sjl = new() { limit = Mathf.Max(grapplePoint.linearLimit.limit - reelInSpeed,5) };
+        SoftJointLimit sjl = new() { limit = Mathf.Max(grapplePoint.linearLimit.limit - reelInSpeed, minDistance) };
         grapplePoint.linearLimit = sjl;
     }
 
