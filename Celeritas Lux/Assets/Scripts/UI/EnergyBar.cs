@@ -8,6 +8,16 @@ public class EnergyBar : MonoBehaviour
 
     public Slider slider;
 
-    public void SetEnergy(float energy) => slider.value = energy;
-    public void SetMaxEnergy(float maxEnergy) => slider.maxValue = maxEnergy;
+    public Image barImage;
+
+    public void SetEnergy(float energy)
+    {
+        slider.value = energy;
+        barImage.enabled = energy > 0f;
+    }
+
+    public void SetMaxEnergy(float maxEnergy)
+    {
+        slider.maxValue = maxEnergy;
+    }
 }

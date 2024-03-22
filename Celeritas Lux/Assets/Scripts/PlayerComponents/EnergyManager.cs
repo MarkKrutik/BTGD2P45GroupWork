@@ -32,8 +32,9 @@ public class EnergyManager : MonoBehaviour
     public bool ChangePower(float amount)
     {
         curEnergy = Mathf.Clamp(curEnergy + amount, 0, maxEnergy);
+        Debug.Log(curEnergy);
         energyBar.SetEnergy(curEnergy);
-        if (curEnergy == 0)
+        if (curEnergy <= 0)
         {
             ragdollController.ToggleRagdoll(true);
             return true; // if changing the power made the power run out, return true

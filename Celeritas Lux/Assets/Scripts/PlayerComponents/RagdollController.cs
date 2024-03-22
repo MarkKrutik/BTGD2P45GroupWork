@@ -31,8 +31,15 @@ public class RagdollController : MonoBehaviour
 
     private async void RagdollDeathTimer()
     {
-        await Task.Delay(TimeSpan.FromSeconds(2));
-        if (checkRagdollDeath()) healthManager.Die();
+        while (Ragdolled())
+        {
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            if (checkRagdollDeath())
+            {
+                healthManager.Die();
+                break;
+            }
+        }
     }
 
     public bool Ragdolled() => isRagdolled;
@@ -54,5 +61,5 @@ public class RagdollController : MonoBehaviour
 
     }
 
-    private bool checkRagdollDeath() => (isRagdolled && rigidbody.velocity.magnitude < 1 && movementController.Grounded());
+    private bool checkRagdollDeath() => (isRagdolled && rigidbody.velocity.magnitude < 1);
 }
