@@ -25,6 +25,7 @@ public class HealthManager : MonoBehaviour
     private RagdollController ragdollController;
     private EnergyManager energyManager;
     private GrappleController grappleController;
+    private MovementController movementController;
 
 
     public void ResetHealth() => health = maxHealth;
@@ -34,6 +35,7 @@ public class HealthManager : MonoBehaviour
         ragdollController = GetComponent<RagdollController>();
         energyManager = GetComponent<EnergyManager>();
         grappleController = GetComponent<GrappleController>();
+        movementController = GetComponent<MovementController>();
         ResetHealth();
     }
 
@@ -62,6 +64,7 @@ public class HealthManager : MonoBehaviour
         energyManager.ResetEnergy();
         ragdollController.ToggleRagdoll(false);
         grappleController.ToggleGrapple(false);
+        movementController.FlushVelocity();
         dead = false;
     }
 }

@@ -106,8 +106,8 @@ public class MovementController : MonoBehaviour
 
     private void Update()
     {
-        processJump(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)); // Input.GetKeyDown has to be handled in the Update() function
-        processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.Space));
+        processJump(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)); // Input.GetKeyDown has to be handled in the Update() function
+        processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) );
 
         if (ragdollController.Ragdolled()) return;
 
@@ -126,6 +126,11 @@ public class MovementController : MonoBehaviour
         GroundedCheck();
         CalculateMovement();
         ApplyGravity();
+    }
+
+    public void FlushVelocity()
+    {
+        rigidbody.velocity = Vector3.zero;
     }
 
     private void Jump()
