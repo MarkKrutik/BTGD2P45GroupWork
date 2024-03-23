@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 767329667108666705}
   - component: {fileID: 6250821978258854585}
   - component: {fileID: 8077389808515596366}
+  - component: {fileID: 5939996949435388782}
   m_Layer: 0
   m_Name: end of level
   m_TagString: Untagged
@@ -120,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportTo: {fileID: 0}
+  maintainVelocity: 0
 --- !u!114 &8077389808515596366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +136,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refillAmmount: 500
   deleteOnUse: 0
+  constantRefill: 0
+--- !u!114 &5939996949435388782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160871943492522830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094d69d095327614f9c6fadef889c48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sunWrapper: {fileID: 0}
+  sunSetting: 1

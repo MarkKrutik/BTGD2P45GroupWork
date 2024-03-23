@@ -4165,6 +4165,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5939996949435388782, guid: 730821058d6f62e46be7c2fef90a42d2,
+        type: 3}
+      propertyPath: sunScale
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3289243282333136670, guid: 15182239483996840a5c222352f8b4b0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

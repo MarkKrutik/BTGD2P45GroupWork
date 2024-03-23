@@ -32,7 +32,7 @@ public class EnergyManager : MonoBehaviour
     public bool ChangePower(float amount)
     {
         curEnergy = Mathf.Clamp(curEnergy + amount, 0, maxEnergy);
-        Debug.Log(curEnergy);
+        //Debug.Log(curEnergy);
         energyBar.SetEnergy(curEnergy);
         if (curEnergy <= 0)
         {
