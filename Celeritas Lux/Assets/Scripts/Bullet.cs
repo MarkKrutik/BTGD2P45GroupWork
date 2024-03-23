@@ -20,13 +20,13 @@ public class Bullet : MonoBehaviour
         if (lifetime < 0) Destroy(this.gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.GetComponent<HealthManager>() != null)
+        if (other.gameObject.GetComponent<HealthManager>() != null)
         {
-            collision.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
-            Destroy(this.gameObject);
+            other.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
         }
 
+        Destroy(this.gameObject);
     }
 }
