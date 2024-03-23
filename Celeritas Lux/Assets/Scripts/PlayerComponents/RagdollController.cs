@@ -13,6 +13,7 @@ public class RagdollController : MonoBehaviour
     private HealthManager healthManager;
     private MovementController movementController;
     private GrappleController grappleController;
+    private AttackHandler attackHandler;
 
 
     private void Start()
@@ -21,6 +22,7 @@ public class RagdollController : MonoBehaviour
         healthManager = GetComponent<HealthManager>();
         movementController = GetComponent<MovementController>();
         grappleController = GetComponent<GrappleController>();
+        attackHandler = GetComponent<AttackHandler>();
         ToggleRagdoll(false);
     }
 
@@ -58,6 +60,7 @@ public class RagdollController : MonoBehaviour
             rigidbody.constraints |= RigidbodyConstraints.FreezeRotationZ; // flip bit on
         }
         isRagdolled = toggle;
+        attackHandler.setAttack(!toggle);
 
     }
 
