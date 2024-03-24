@@ -52,7 +52,7 @@ public class Turret : MonoBehaviour
     {
         if (other.gameObject.GetComponent<MovementController>() != null) {
             active = true;
-            deltaReload = detectionDelay;
+            deltaReload = Mathf.Max(detectionDelay, deltaReload);
         }
     }
 

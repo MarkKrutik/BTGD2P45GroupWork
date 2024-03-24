@@ -8,6 +8,8 @@ public class MovementController : MonoBehaviour
 {
 
 
+    /// <summary> The number of jumps the player is allowed to do in-air before they have to hit the ground. </summary>
+    public int maxJumpCount = 1;
 
     /// <summary> The number of jumps in-air the player has done thus far. </summary>
     private int jumpCount;
@@ -32,6 +34,8 @@ public class MovementController : MonoBehaviour
 
     /// <summary> Has the player already dashed in the air? </summary>
     private bool dashAirBuffer = false;
+
+    public void ResetDashBuffer() => dashAirBuffer = true;
 
     /// <summary> Determines the acceleration of the player. </summary>
     public float moveSpeed;
@@ -163,7 +167,7 @@ public class MovementController : MonoBehaviour
 
         rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), 0, 0), ForceMode.Acceleration);
 
-        if (moveInput.y > 0 && jumpCount <= 2) Jump();
+        if (moveInput.y > 0 && jumpCount <= maxJumpCount) Jump();
 
 
         if (unProcessedDash) Dash();
@@ -184,7 +188,7 @@ public class MovementController : MonoBehaviour
     {
         if (dashAirBuffer) return;
         if (ragdollController.Ragdolled()) return;
-        if (rigidbody.velocity.sqrMagnitude < 4) return;
+        if (rigidbody.velocity.sqrMagnitude < 1) return;
         energyManager.ChangePower(-dashCost);
         rigidbody.AddForce(new Vector3(rigidbody.velocity.x,0,0).normalized * dashForce, ForceMode.Impulse);
         dashAirBuffer = true;

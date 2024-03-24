@@ -20,6 +20,7 @@ public class AttackHandler : MonoBehaviour
         if (movementController.isDashing() && collision.gameObject.GetComponent<Turret>() != null && canAttack)
         {
             Destroy(collision.gameObject);
+            movementController.ResetDashBuffer();
         }
     }
 }
