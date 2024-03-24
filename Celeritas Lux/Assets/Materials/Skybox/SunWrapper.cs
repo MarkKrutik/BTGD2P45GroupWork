@@ -53,8 +53,8 @@ public class SunWrapper : MonoBehaviour
     private void Start()
     {
         skybox = RenderSettings.skybox;
-        Debug.Log(skybox.enabledKeywords);
-        Debug.Log(RenderSettings.skybox.GetFloat("_Sun"));
+        //Debug.Log(skybox.enabledKeywords);
+        //Debug.Log(RenderSettings.skybox.GetFloat("_Sun"));
     }
 
     public void SetSunDistance(float distance)
@@ -72,7 +72,7 @@ public class SunWrapper : MonoBehaviour
             skybox.SetFloat("_Sun", 2.2f - 0.12f * Mathf.Pow(E, 0.33f * distance)); // y = 2.2 - 0.12e^{0.33x}
             skybox.SetFloat("_Exposure", 1.75f - 0.16f * Mathf.Pow(E, 0.4f * distance)); // y = 1.75 - 0.16e^{0.4x}
             DynamicGI.UpdateEnvironment();
-            Debug.Log(RenderSettings.skybox.GetFloat("_Sun"));
+            //Debug.Log(RenderSettings.skybox.GetFloat("_Sun"));
             setNewDistance = false;
         }
     }

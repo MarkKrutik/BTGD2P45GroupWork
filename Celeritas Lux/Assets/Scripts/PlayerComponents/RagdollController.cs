@@ -9,7 +9,7 @@ public class RagdollController : MonoBehaviour
     /// <summary> Is the player current ragdolled? Recalculated every time energy changes. </summary>
     private bool isRagdolled = false;
 
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
     private HealthManager healthManager;
     private MovementController movementController;
     private GrappleController grappleController;
@@ -18,7 +18,7 @@ public class RagdollController : MonoBehaviour
 
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         healthManager = GetComponent<HealthManager>();
         movementController = GetComponent<MovementController>();
         grappleController = GetComponent<GrappleController>();
@@ -51,18 +51,18 @@ public class RagdollController : MonoBehaviour
         if (toggle)
         {
             grappleController.ToggleGrapple(false);
-            rigidbody.AddTorque(new Vector3(0, 0, UnityEngine.Random.Range(-1, 1)), ForceMode.VelocityChange); // TODO: verify this does anything
-            rigidbody.constraints &= ~RigidbodyConstraints.FreezeRotationZ; // flip bit off
+            rb.AddTorque(new Vector3(0, 0, UnityEngine.Random.Range(-1, 1)), ForceMode.VelocityChange); // TODO: verify this does anything
+            rb.constraints &= ~RigidbodyConstraints.FreezeRotationZ; // flip bit off
         }
         else
         {
-            rigidbody.rotation = Quaternion.Euler(0, 0, 0);
-            rigidbody.constraints |= RigidbodyConstraints.FreezeRotationZ; // flip bit on
+            rb.rotation = Quaternion.Euler(0, 0, 0);
+            rb.constraints |= RigidbodyConstraints.FreezeRotationZ; // flip bit on
         }
         isRagdolled = toggle;
         attackHandler.setAttack(!toggle);
 
     }
 
-    private bool checkRagdollDeath() => (isRagdolled && rigidbody.velocity.magnitude < 1);
+    private bool checkRagdollDeath() => (isRagdolled && rb.velocity.magnitude < 1);
 }

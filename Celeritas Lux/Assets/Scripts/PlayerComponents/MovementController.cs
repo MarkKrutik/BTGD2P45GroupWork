@@ -30,7 +30,7 @@ public class MovementController : MonoBehaviour
     public float jumpHeight;
 
     /// <summary> Is the player currently in the air from jumping. </summary>
-    private bool jumpAirBuffer = false;
+    //private bool jumpAirBuffer = false;
 
     /// <summary> Has the player already dashed in the air? </summary>
     private bool dashAirBuffer = false;
@@ -83,7 +83,7 @@ public class MovementController : MonoBehaviour
     public LayerMask groundLayer;
 
     /// <summary> The rigidbody attached to the same object as this script, will crash if not </summary>
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
 
 
     private RagdollController ragdollController;
@@ -92,7 +92,7 @@ public class MovementController : MonoBehaviour
 
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         ragdollController = GetComponent<RagdollController>();
         energyManager = GetComponent<EnergyManager>();
         animationController = GetComponent<AnimationController>();
@@ -105,7 +105,7 @@ public class MovementController : MonoBehaviour
         curGravity = gravity;
     }
 
-    private void ApplyGravity() => rigidbody.AddForce(curGravity, ForceMode.Acceleration);
+    private void ApplyGravity() => rb.AddForce(curGravity, ForceMode.Acceleration);
     private void GroundedCheck() => isGrounded = Physics.OverlapCapsule(groundCast1.position, groundCast2.position, groundCheckDist, groundLayer).Length > 0;
 
     private void Update()
@@ -134,17 +134,17 @@ public class MovementController : MonoBehaviour
 
     public void FlushVelocity()
     {
-        rigidbody.velocity = Vector3.zero;
+        rb.velocity = Vector3.zero;
     }
 
     private void Jump()
     {
         if (ragdollController.Ragdolled()) return;
         energyManager.ChangePower(-Mathf.Pow(jumpCostMultiplier, jumpCount) + 1);
-        rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, 0);
+        rb.velocity = new Vector3(rb.velocity.x, 0, 0);
         gameObject.GetComponent<Rigidbody>().AddForce(jumpHeight * Vector3.up, ForceMode.Impulse);
         jumpCount++;
-        jumpAirBuffer = true;
+        //jumpAirBuffer = true;
 
     }
     
@@ -158,14 +158,14 @@ public class MovementController : MonoBehaviour
 
         if (isGrounded)
         {
-            if (rigidbody.velocity.y <= 0)
+            if (rb.velocity.y <= 0)
             {
                 jumpCount = 0;
                 dashAirBuffer = false;
             }
         }
 
-        rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), 0, 0), ForceMode.Acceleration);
+        rb.AddForce(new Vector3(moveInput.x * moveSpeed * (isGrounded ? 1 : airControlFactor), 0, 0), ForceMode.Acceleration);
 
         if (moveInput.y > 0 && jumpCount <= maxJumpCount) Jump();
 
@@ -173,12 +173,12 @@ public class MovementController : MonoBehaviour
         if (unProcessedDash) Dash();
         unProcessedDash = false;
 
-        if (moveInput.x * rigidbody.velocity.x < 0) // if the intended velocity and current velocity are opposite directions (player wants to go other way), slow down faster 
+        if (moveInput.x * rb.velocity.x < 0) // if the intended velocity and current velocity are opposite directions (player wants to go other way), slow down faster 
         {
-            rigidbody.AddForce(new Vector3(moveInput.x * moveSpeed * 3, 0, 0), ForceMode.Acceleration);
+            rb.AddForce(new Vector3(moveInput.x * moveSpeed * 3, 0, 0), ForceMode.Acceleration);
         }
 
-        if (rigidbody.velocity.sqrMagnitude > speedCap*speedCap) rigidbody.velocity = rigidbody.velocity.normalized * speedCap;
+        if (rb.velocity.sqrMagnitude > speedCap*speedCap) rb.velocity = rb.velocity.normalized * speedCap;
         
         if (!animationController.isFacingRight() && moveInput.x > 0) animationController.Flip(); // was left now right, so flip
         else if (animationController.isFacingRight() && moveInput.x < 0) animationController.Flip(); // was right now left, so flip
@@ -188,9 +188,9 @@ public class MovementController : MonoBehaviour
     {
         if (dashAirBuffer) return;
         if (ragdollController.Ragdolled()) return;
-        if (rigidbody.velocity.sqrMagnitude < 1) return;
+        if (rb.velocity.sqrMagnitude < 1) return;
         energyManager.ChangePower(-dashCost);
-        rigidbody.AddForce(new Vector3(rigidbody.velocity.x,0,0).normalized * dashForce, ForceMode.Impulse);
+        rb.AddForce(new Vector3(rb.velocity.x,0,0).normalized * dashForce, ForceMode.Impulse);
         dashAirBuffer = true;
         curDashing = true;
         await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
