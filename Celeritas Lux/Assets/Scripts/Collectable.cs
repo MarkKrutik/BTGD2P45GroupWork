@@ -8,6 +8,7 @@ public class Collectable : MonoBehaviour
     {
         if (other.GetComponent<CollectablesManager>() != null)
         {
+            FindObjectOfType<AudioManager>().play("BatteryPickup");
             other.GetComponent<CollectablesManager>().addCollectable();
             Destroy(this.gameObject);
         }

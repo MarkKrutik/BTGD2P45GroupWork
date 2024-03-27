@@ -12,6 +12,7 @@ public class CollectablesManager : MonoBehaviour
 
     public void addCollectable()
     {
+        FindObjectOfType<AudioManager>().play("Collectible");
         collectablesAquired++;
         counter.setCounter(collectablesAquired);
     }

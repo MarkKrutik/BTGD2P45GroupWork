@@ -137,6 +137,7 @@ MonoBehaviour:
   refillAmmount: 500
   deleteOnUse: 0
   constantRefill: 0
+  playsound: 0
 --- !u!114 &5939996949435388782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,4 +151,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunWrapper: {fileID: 0}
-  sunSetting: 1
+  sunScale: 0

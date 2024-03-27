@@ -19,6 +19,7 @@ public class AttackHandler : MonoBehaviour
     {
         if (movementController.isDashing() && collision.gameObject.GetComponent<Turret>() != null && canAttack)
         {
+            FindObjectOfType<AudioManager>().play("EnemyDeath");
             Destroy(collision.gameObject);
             movementController.ResetDashBuffer();
         }

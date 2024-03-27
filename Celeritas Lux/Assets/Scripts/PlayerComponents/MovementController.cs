@@ -140,9 +140,12 @@ public class MovementController : MonoBehaviour
     private void Jump()
     {
         if (ragdollController.Ragdolled()) return;
+        FindObjectOfType<AudioManager>().play("PlayerJump");
         energyManager.ChangePower(-Mathf.Pow(jumpCostMultiplier, jumpCount) + 1);
         rb.velocity = new Vector3(rb.velocity.x, 0, 0);
         gameObject.GetComponent<Rigidbody>().AddForce(jumpHeight * Vector3.up, ForceMode.Impulse);
+        
+
         jumpCount++;
         //jumpAirBuffer = true;
 
@@ -189,6 +192,7 @@ public class MovementController : MonoBehaviour
         if (dashAirBuffer) return;
         if (ragdollController.Ragdolled()) return;
         if (rb.velocity.sqrMagnitude < 1) return;
+        FindObjectOfType<AudioManager>().play("PlayerDash");
         energyManager.ChangePower(-dashCost);
         rb.AddForce(new Vector3(rb.velocity.x,0,0).normalized * dashForce, ForceMode.Impulse);
         dashAirBuffer = true;

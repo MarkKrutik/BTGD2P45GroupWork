@@ -57,7 +57,8 @@ public class pausemenu : MonoBehaviour
     }
 
     void Optionson()
-    {   
+    {
+        FindObjectOfType<AudioManager>().play("UIConfirm");
         options = true; 
         OptionsMenu.SetActive(true);
         PauseMenu.SetActive(false );
@@ -65,7 +66,8 @@ public class pausemenu : MonoBehaviour
     }
 
     void optionsoff()
-    {   
+    {
+        
         options = false;
         OptionsMenu.SetActive(false);
         PauseMenu.SetActive(true);
@@ -79,7 +81,7 @@ public class pausemenu : MonoBehaviour
 
     public void mainmenu()
     {
-        
+        FindObjectOfType<AudioManager>().play("UIConfirm");
         SceneManager.LoadScene("Titlescreen");
     }
 }

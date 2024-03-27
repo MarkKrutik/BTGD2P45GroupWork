@@ -21,7 +21,8 @@ public class TitleScreen : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (crediton)  
-            { 
+            {
+                
                 crediton = false;
                 Creditscreen.SetActive(false);
             }
@@ -30,6 +31,7 @@ public class TitleScreen : MonoBehaviour
 
     public void start()
     {
+        FindObjectOfType<AudioManager>().play("UIConfirm");
 
         SceneManager.LoadScene("all whitebox");
         Time.timeScale = 1f;
@@ -38,12 +40,14 @@ public class TitleScreen : MonoBehaviour
 
     public void exit()
     {
-        
+        FindObjectOfType<AudioManager>().play("UIConfirm");
+
         Application.Quit();
     }
 
     public void credits()
     {
+        FindObjectOfType<AudioManager>().play("UIConfirm");
         Creditscreen.SetActive(true);
         crediton = true;
 }

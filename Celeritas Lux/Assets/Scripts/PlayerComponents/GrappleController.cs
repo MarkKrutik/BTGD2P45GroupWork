@@ -47,6 +47,7 @@ public class GrappleController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
         {
+            FindObjectOfType<AudioManager>().play("GrappleAttach"); 
             ToggleGrapple(true);
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))

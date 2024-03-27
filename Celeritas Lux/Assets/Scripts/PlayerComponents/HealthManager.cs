@@ -41,6 +41,7 @@ public class HealthManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        FindObjectOfType<AudioManager>().play("PlayerDamage");
         health = Mathf.Max(0, health - damage);
         Debug.Log("Ouch!");
         if (health <= 0) Die();
@@ -50,6 +51,7 @@ public class HealthManager : MonoBehaviour
     {
         if (dead) return; // NOTE: this isn't atomic so there may be leaks, if the player dies after respawning this is why
         dead = true;
+        FindObjectOfType<AudioManager>().play("PlayerDeath");
 
         Debug.Log("Dead!");
         ragdollController.ToggleRagdoll(true);

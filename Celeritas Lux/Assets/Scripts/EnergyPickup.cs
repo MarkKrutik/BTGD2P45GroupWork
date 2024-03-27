@@ -9,6 +9,7 @@ public class EnergyPickup : MonoBehaviour
     public float refillAmmount = 5.0f;
     public bool deleteOnUse = false;
     public bool constantRefill = false;
+    public bool playsound = true;
 
     private EnergyManager curPlayer;
 
@@ -21,6 +22,11 @@ public class EnergyPickup : MonoBehaviour
     {
         if (other.gameObject.GetComponent<EnergyManager>() != null)
         {
+            if (playsound)
+            {
+                FindObjectOfType<AudioManager>().play("BatteryRecharge");
+            }
+            
             other.gameObject.GetComponent<EnergyManager>().ChangePower(refillAmmount);
             if (deleteOnUse) Destroy(this.gameObject);
             if (constantRefill) curPlayer = other.gameObject.GetComponent<EnergyManager>();

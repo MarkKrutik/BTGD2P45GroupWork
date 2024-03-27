@@ -7190,6 +7190,111 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1530971195}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2064021838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064021840}
+  - component: {fileID: 2064021839}
+  m_Layer: 0
+  m_Name: Audiomanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2064021839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064021838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab8735817083f041b974c46710b48a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: 076f40a6e79b70a469cc18b5b48611c9, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: PlayerDash
+    clip: {fileID: 8300000, guid: 3688267254289654aac752ad84e64d32, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: PlayerDamage
+    clip: {fileID: 8300000, guid: 94ac72532cf5e1844b0de6328ebd8d07, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: f8ae2860d78370649a6cd4042de0ec46, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: GrappleAttach
+    clip: {fileID: 8300000, guid: 5043909a894a56a4bb9e769f24784df9, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: BatteryRecharge
+    clip: {fileID: 8300000, guid: 9d66b078494c253489a59c37444a16cb, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+  - name: BatterySation
+    clip: {fileID: 8300000, guid: 88643825e3132344c966bbb8a17539a3, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyShot
+    clip: {fileID: 8300000, guid: 6abada4215ef7344b8d668dd5d48af71, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyDeath
+    clip: {fileID: 8300000, guid: 69da142cb2467f448acfb81d5f9fc338, type: 3}
+    volume: 0.3
+    pitch: 0.5
+    source: {fileID: 0}
+  - name: LevelComplete
+    clip: {fileID: 8300000, guid: adc17489a7e694a46b6856c209039906, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Collectible
+    clip: {fileID: 8300000, guid: be8a822e9f99937459cbe84cf1e92f8d, type: 3}
+    volume: 0.3
+    pitch: 0.5
+    source: {fileID: 0}
+  - name: UIConfirm
+    clip: {fileID: 8300000, guid: c462f0839792e384696798a513c5ac34, type: 3}
+    volume: 0.3
+    pitch: 0.5
+    source: {fileID: 0}
+--- !u!4 &2064021840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064021838}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2065374814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7387,6 +7492,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 319909414}
+  - {fileID: 2064021840}
   - {fileID: 361084190}
   - {fileID: 1530971195}
   - {fileID: 1035360504}

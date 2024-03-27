@@ -40,6 +40,7 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
+        FindObjectOfType<AudioManager>().play("EnemyShot");
         Bullet firedBullet = Instantiate(bullet,startPos); {
             firedBullet.transform.SetParent(this.transform.parent);
             firedBullet.lifetime = 5;
