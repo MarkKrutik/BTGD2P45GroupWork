@@ -25,9 +25,18 @@ public class Turret : MonoBehaviour
     /// <summary> is the turret actively firing? </summary>
     public bool active;
 
+    static public Animator animator;
+
+    public bool floating;
+
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("Shooting", false);
+        if (floating)
+        {
+            animator.SetBool("Float", true);
+        }
         if (!active) return;
 
         deltaReload -= Time.deltaTime;
@@ -41,6 +50,7 @@ public class Turret : MonoBehaviour
     private void Shoot()
     {
         FindObjectOfType<AudioManager>().play("EnemyShot");
+        animator.SetBool("Shooting", true);
         Bullet firedBullet = Instantiate(bullet,startPos); {
             firedBullet.transform.SetParent(this.transform.parent);
             firedBullet.lifetime = 5;

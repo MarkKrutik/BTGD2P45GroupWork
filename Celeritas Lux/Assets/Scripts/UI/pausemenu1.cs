@@ -43,9 +43,14 @@ public class pausemenu : MonoBehaviour
     }
 
     public void Resume()
-    {
+    {   
+        
         PauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        if (Cinematic.Cinematicon == false)
+        {
+            Time.timeScale = 1f;
+        }
+        
         gamepaused = false;
     }
 

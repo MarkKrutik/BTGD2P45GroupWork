@@ -13,11 +13,19 @@ public class AnimationController : MonoBehaviour
 
     public bool isFacingRight() => facingRight;
 
+    bool opposite = true;
+
+    public Animator animator;
+    public SpriteRenderer spriterendered;
+
     public void Flip()
     {
+        spriterendered.flipX = true;
         Vector3 workingScale = sprite.transform.localScale;
         workingScale.x *= -1f;
         sprite.transform.localScale = workingScale;
         facingRight = !facingRight;
+        spriterendered.flipX = opposite;
+        opposite = !opposite;
     }
 }

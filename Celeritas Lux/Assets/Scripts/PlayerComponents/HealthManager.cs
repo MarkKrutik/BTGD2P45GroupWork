@@ -22,6 +22,8 @@ public class HealthManager : MonoBehaviour
     /// <summary> is the player currently dead, used for preventing multi-respawns. </summary>
     private volatile bool dead = false;
 
+    public Animator animator;
+
     private RagdollController ragdollController;
     private EnergyManager energyManager;
     private GrappleController grappleController;
@@ -52,16 +54,19 @@ public class HealthManager : MonoBehaviour
         if (dead) return; // NOTE: this isn't atomic so there may be leaks, if the player dies after respawning this is why
         dead = true;
         FindObjectOfType<AudioManager>().play("PlayerDeath");
-
+        animator.SetBool("Dead", true);
         Debug.Log("Dead!");
         ragdollController.ToggleRagdoll(true);
         StartCoroutine("Respawn");
     }
     private async void Respawn()
-    {
+    {   
+
+        
         await Task.Delay(TimeSpan.FromSeconds(respawnDelay)); // wait some time
         gameObject.transform.position = checkpointPosition;
         // reset all properties to default
+        animator.SetBool("Dead", false);
         ResetHealth();
         energyManager.ResetEnergy();
         ragdollController.ToggleRagdoll(false);

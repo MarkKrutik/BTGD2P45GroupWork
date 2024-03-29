@@ -85,6 +85,9 @@ public class MovementController : MonoBehaviour
     /// <summary> The rigidbody attached to the same object as this script, will crash if not </summary>
     private Rigidbody rb;
 
+    public Animator animator;
+    
+
 
     private RagdollController ragdollController;
     private EnergyManager energyManager;
@@ -128,7 +131,25 @@ public class MovementController : MonoBehaviour
     private void FixedUpdate()
     {
         GroundedCheck();
+        if (Grounded())
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("DubJump", false);
+            animator.SetBool("Air", false) ;
+        }
+        if (!Grounded())
+        {
+            animator.SetBool("Air", true);
+        }
         CalculateMovement();
+        if (curDashing)
+        {
+            animator.SetBool("Dash", true);
+        }
+        if (!curDashing)
+        {
+            animator.SetBool("Dash", false);
+        }
         ApplyGravity();
     }
 
@@ -141,6 +162,16 @@ public class MovementController : MonoBehaviour
     {
         if (ragdollController.Ragdolled()) return;
         FindObjectOfType<AudioManager>().play("PlayerJump");
+        if (Grounded())
+        {
+            animator.SetBool("Jump", true);
+        }
+        if (!Grounded())
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("DubJump", true);
+        }
+        
         energyManager.ChangePower(-Mathf.Pow(jumpCostMultiplier, jumpCount) + 1);
         rb.velocity = new Vector3(rb.velocity.x, 0, 0);
         gameObject.GetComponent<Rigidbody>().AddForce(jumpHeight * Vector3.up, ForceMode.Impulse);
@@ -157,6 +188,7 @@ public class MovementController : MonoBehaviour
 
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), unProcessedJump ? 1 : 0);
         unProcessedJump = false;
+        
 
 
         if (isGrounded)
@@ -182,6 +214,19 @@ public class MovementController : MonoBehaviour
         }
 
         if (rb.velocity.sqrMagnitude > speedCap*speedCap) rb.velocity = rb.velocity.normalized * speedCap;
+
+        if (rb.velocity.x > 0)
+        {
+            animator.SetFloat("Speed", rb.velocity.x);
+        }
+        else if (rb.velocity.x < 0)
+        {
+            animator.SetFloat("Speed", -1*rb.velocity.x);
+        }
+         
+         
+        
+        
         
         if (!animationController.isFacingRight() && moveInput.x > 0) animationController.Flip(); // was left now right, so flip
         else if (animationController.isFacingRight() && moveInput.x < 0) animationController.Flip(); // was right now left, so flip
@@ -193,11 +238,12 @@ public class MovementController : MonoBehaviour
         if (ragdollController.Ragdolled()) return;
         if (rb.velocity.sqrMagnitude < 1) return;
         FindObjectOfType<AudioManager>().play("PlayerDash");
+        
         energyManager.ChangePower(-dashCost);
         rb.AddForce(new Vector3(rb.velocity.x,0,0).normalized * dashForce, ForceMode.Impulse);
         dashAirBuffer = true;
         curDashing = true;
-        await Task.Delay(TimeSpan.FromSeconds(2)); // wait some time
+        await Task.Delay(TimeSpan.FromSeconds(1)); // wait some time
         curDashing = false;
     }
 
