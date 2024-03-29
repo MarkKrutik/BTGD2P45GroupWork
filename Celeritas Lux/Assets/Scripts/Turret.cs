@@ -25,7 +25,7 @@ public class Turret : MonoBehaviour
     /// <summary> is the turret actively firing? </summary>
     public bool active;
 
-    static public Animator animator;
+    public Animator animator;
 
     public bool floating;
 
