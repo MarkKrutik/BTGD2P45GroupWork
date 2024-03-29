@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 5660461963772485787}
   - component: {fileID: 2381690081079886729}
   - component: {fileID: 2242023432426927523}
+  - component: {fileID: 4379277583230029728}
   m_Layer: 0
-  m_Name: energy_refill
+  m_Name: Energy_Checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,3 +121,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refillAmmount: 1e+9
   deleteOnUse: 0
+  constantRefill: 0
+  playsound: 1
+--- !u!114 &4379277583230029728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679832758070811597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790e5d330d5cce041aea44207e3d8eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
