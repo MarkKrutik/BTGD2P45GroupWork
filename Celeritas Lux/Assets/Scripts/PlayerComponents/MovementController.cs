@@ -14,6 +14,8 @@ public class MovementController : MonoBehaviour
     /// <summary> The number of jumps in-air the player has done thus far. </summary>
     private int jumpCount;
 
+    public void resetJumpCount() => jumpCount = 0;
+
     /// <summary> The factor the cost of a jump is multiplied by each successive in-air jump. </summary>
     public float jumpCostMultiplier = 2;
 

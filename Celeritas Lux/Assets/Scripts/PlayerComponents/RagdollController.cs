@@ -51,7 +51,7 @@ public class RagdollController : MonoBehaviour
         if (toggle)
         {
             grappleController.ToggleGrapple(false);
-            rb.AddTorque(new Vector3(0, 0, UnityEngine.Random.Range(-1, 1)), ForceMode.VelocityChange); // TODO: verify this does anything
+            rb.AddTorque(new Vector3(0, 0, ((UnityEngine.Random.Range(0,1)) * 2) - 1)  * 2, ForceMode.VelocityChange); // TODO: verify this does anything
             rb.constraints &= ~RigidbodyConstraints.FreezeRotationZ; // flip bit off
         }
         else

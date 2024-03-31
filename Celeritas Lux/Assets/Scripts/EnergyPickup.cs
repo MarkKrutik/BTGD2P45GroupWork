@@ -10,6 +10,8 @@ public class EnergyPickup : MonoBehaviour
     public bool deleteOnUse = false;
     public bool constantRefill = false;
     public bool playsound = true;
+    public bool resetDash = false;
+    public bool resetJumps = false;
 
     private EnergyManager curPlayer;
 
@@ -20,7 +22,7 @@ public class EnergyPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<EnergyManager>() != null)
+        if (other.gameObject.GetComponent<EnergyManager>() != null && other.gameObject.GetComponent<MovementController>() != null)
         {
             if (playsound)
             {
@@ -30,6 +32,8 @@ public class EnergyPickup : MonoBehaviour
             other.gameObject.GetComponent<EnergyManager>().ChangePower(refillAmmount);
             if (deleteOnUse) Destroy(this.gameObject);
             if (constantRefill) curPlayer = other.gameObject.GetComponent<EnergyManager>();
+            if (resetDash) other.gameObject.GetComponent<MovementController>().ResetDashBuffer();
+            if (resetJumps) other.gameObject.GetComponent<MovementController>().resetJumpCount();
         }
     }
 
