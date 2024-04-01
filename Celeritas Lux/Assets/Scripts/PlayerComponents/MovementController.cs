@@ -97,6 +97,7 @@ public class MovementController : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<AudioManager>().play("MainTheme");
         rb = GetComponent<Rigidbody>();
         ragdollController = GetComponent<RagdollController>();
         energyManager = GetComponent<EnergyManager>();
@@ -113,8 +114,12 @@ public class MovementController : MonoBehaviour
     private void ApplyGravity() => rb.AddForce(curGravity, ForceMode.Acceleration);
     private void GroundedCheck() => isGrounded = Physics.OverlapCapsule(groundCast1.position, groundCast2.position, groundCheckDist, groundLayer).Length > 0;
 
+    
+
+
     private void Update()
     {
+        
         processJump(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)); // Input.GetKeyDown has to be handled in the Update() function
         processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) );
 
