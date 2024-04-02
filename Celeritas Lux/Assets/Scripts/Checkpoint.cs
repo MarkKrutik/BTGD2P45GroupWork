@@ -8,6 +8,7 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.gameObject.GetComponent<HealthManager>() != null)
         {
+            FindObjectOfType<AudioManager>().play("Checkpoint");
             other.gameObject.GetComponent<HealthManager>().checkpointPosition = this.transform.position;
         }
     }

@@ -427,6 +427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 415789292978335171}
+  animator: {fileID: 0}
+  spriterendered: {fileID: 0}
 --- !u!114 &5366501543678736503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce33512a1dc50f4f8d7acf21b3283a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 6847810386918355773}
+  playerCamera: {fileID: 0}
 --- !u!114 &4566268267231015577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72af19b1f0761aa40a97e7aaef14d427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnergy: 40
+  maxEnergy: 20
   energyBar: {fileID: 0}
 --- !u!114 &994334833619703248
 MonoBehaviour:
@@ -496,6 +498,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   reelInSpeed: 0.001
+  minDistance: 0.1
   ropeMaterial: {fileID: 2100000, guid: 24cacd853b3588241ad3c67ebd4d10a7, type: 2}
 --- !u!114 &474464586142480509
 MonoBehaviour:
@@ -513,6 +516,7 @@ MonoBehaviour:
   health: 0
   checkpointPosition: {x: 0, y: 0, z: 0}
   respawnDelay: 2
+  animator: {fileID: 0}
 --- !u!114 &2537954196872259021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,6 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3baa281fc0d417644b66b8ae1c53a1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxJumpCount: 1
   jumpCostMultiplier: 2
   curGravity: {x: 0, y: -9.81, z: 0}
   bufferGravity: {x: Infinity, y: Infinity, z: Infinity}
@@ -541,6 +546,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+  animator: {fileID: 0}
 --- !u!114 &3330828485157841312
 MonoBehaviour:
   m_ObjectHideFlags: 0

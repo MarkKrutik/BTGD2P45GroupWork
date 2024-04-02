@@ -14,12 +14,18 @@ public class AudioManager : MonoBehaviour
 
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            
         }
     }
 
     public void play (string name)
     {
         Sound s = Array.Find(sounds, Sound=>Sound.name  == name);
+
+        if (name == "MainTheme")
+        {
+            s.source.loop = true;  
+        }
         
         if (s == null)
         {

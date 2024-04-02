@@ -14,6 +14,8 @@ public class MovementController : MonoBehaviour
     /// <summary> The number of jumps in-air the player has done thus far. </summary>
     private int jumpCount;
 
+    public void resetJumpCount() => jumpCount = 0;
+
     /// <summary> The factor the cost of a jump is multiplied by each successive in-air jump. </summary>
     public float jumpCostMultiplier = 2;
 
@@ -95,6 +97,7 @@ public class MovementController : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<AudioManager>().play("MainTheme");
         rb = GetComponent<Rigidbody>();
         ragdollController = GetComponent<RagdollController>();
         energyManager = GetComponent<EnergyManager>();
@@ -111,8 +114,12 @@ public class MovementController : MonoBehaviour
     private void ApplyGravity() => rb.AddForce(curGravity, ForceMode.Acceleration);
     private void GroundedCheck() => isGrounded = Physics.OverlapCapsule(groundCast1.position, groundCast2.position, groundCheckDist, groundLayer).Length > 0;
 
+    
+
+
     private void Update()
     {
+        
         processJump(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)); // Input.GetKeyDown has to be handled in the Update() function
         processDash(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) );
 

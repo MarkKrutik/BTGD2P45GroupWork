@@ -52,6 +52,12 @@ public class TitleScreen : MonoBehaviour
         crediton = true;
 }
     
+    public void escapecred()
+    {
+        FindObjectOfType<AudioManager>().play("UIConfirm");
+        crediton = false;
+                Creditscreen.SetActive(false);
+    }
         
     
 }

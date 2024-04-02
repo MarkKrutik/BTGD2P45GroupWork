@@ -56,6 +56,7 @@ public class pausemenu : MonoBehaviour
 
     void Pause()
     {
+        FindObjectOfType<AudioManager>().play("UIConfirm");
         PauseMenu.SetActive(true);
         Time.timeScale = 0f;
         gamepaused = true;
@@ -70,7 +71,7 @@ public class pausemenu : MonoBehaviour
         
     }
 
-    void optionsoff()
+    public void optionsoff()
     {
         
         options = false;

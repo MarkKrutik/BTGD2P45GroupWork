@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c345b22f5b7d74a8c2282463194905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refillAmmount: -1
+  refillAmmount: -0.01
   deleteOnUse: 0
   constantRefill: 1
+  playsound: 1

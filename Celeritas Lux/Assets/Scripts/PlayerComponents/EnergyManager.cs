@@ -31,6 +31,8 @@ public class EnergyManager : MonoBehaviour
 
     public bool ChangePower(float amount)
     {
+        if (curEnergy <= 0 && amount <= 0) return true; // prevent rapid ragdoll from energy zones
+
         curEnergy = Mathf.Clamp(curEnergy + amount, 0, maxEnergy);
         //Debug.Log(curEnergy);
         energyBar.SetEnergy(curEnergy);
