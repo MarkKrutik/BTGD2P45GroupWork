@@ -19,6 +19,12 @@ public class Turret : MonoBehaviour
     /// <summary> The current delta time until the next shot, counts down. </summary>
     private float deltaReload;
 
+    /// <summary> The amount of time until the turret stops firing when exiting </summary>
+    public float exitDelay;
+
+    /// <summary> The time in seconds before the turret stops firing  </summary>
+    private float deltaExit;
+
     /// <summary> The bullet prefab to instantiate when the turret fires </summary>
     public Bullet bullet;
     
@@ -37,8 +43,9 @@ public class Turret : MonoBehaviour
         {
             animator.SetBool("Float", true);
         }
-        if (!active) return;
+        if (!active && deltaExit <= 0) return;
 
+        if (!active) deltaExit -= Time.deltaTime;
         deltaReload -= Time.deltaTime;
         while (deltaReload <= 0)
         {
@@ -70,5 +77,6 @@ public class Turret : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         active = (other.gameObject.GetComponent<MovementController>() == null) && active; // set active false if player exits
+        deltaExit = exitDelay;
     }
 }

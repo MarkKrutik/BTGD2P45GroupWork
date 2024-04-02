@@ -107,6 +107,7 @@ MonoBehaviour:
   startPos: {fileID: 6723201687512459669}
   detectionDelay: 0
   reloadDelay: 1
+  exitDelay: 3
   bullet: {fileID: 8441454543548606102, guid: 18a9fa38c45d81746990279392b96389, type: 3}
   active: 0
   animator: {fileID: 7378713535277029192}
