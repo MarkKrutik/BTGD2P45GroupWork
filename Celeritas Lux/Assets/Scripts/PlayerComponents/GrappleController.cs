@@ -6,7 +6,7 @@ using UnityEngine;
 public class GrappleController : MonoBehaviour
 {
 
-    /// <summary> The distance a grapple point has to be within the mouse to be considered usable for a grapple </summary>
+    /// <summary> The distance a grapple point has to be within the player to be capable of grappling </summary>
     public float grappleCheckDist;
 
     /// <summary> The collision layer that indicates something can be grappled on. </summary>
@@ -16,20 +16,28 @@ public class GrappleController : MonoBehaviour
     private ConfigurableJoint grapplePoint;
 
     [SerializeField]
-    private float reelInSpeed = 0.001f;
-
-    [SerializeField]
-    private float minDistance = 0.1f;
-
-    [SerializeField]
     private Material ropeMaterial;
-
-    private bool reelingIn = false;
 
     private RagdollController ragdollController;
     private CameraController cameraController;
 
-    public bool CheckGrapple() => Physics.OverlapSphere(cameraController.GetGlobalMousePosition(), grappleCheckDist, grappleLayer).Length > 0;
+    public bool quickGrappleCheck() => Physics.OverlapSphere(transform.position, grappleCheckDist, grappleLayer).Length > 0;
+
+    public GameObject GetClosestGrapple() // grabs the closest grapple point that is in range
+    {
+        Collider[] inRange = Physics.OverlapSphere(transform.position, grappleCheckDist, grappleLayer);
+        GameObject closest = null;
+        float closestSqrDist = Mathf.Infinity;
+        foreach (Collider c in inRange) // go through all possible grapples and get the closest
+        {
+            if ((c.transform.position - transform.position).sqrMagnitude < closestSqrDist)
+            {
+                closest = c.gameObject;
+                closestSqrDist = (c.transform.position - transform.position).sqrMagnitude;
+            }
+        }
+        return closest;
+    }
 
     private void Start()
     {
@@ -40,59 +48,36 @@ public class GrappleController : MonoBehaviour
 
     private void Update()
     {
-        if (grapplePoint != null) grapplePoint.gameObject.GetComponent<LineRenderer>().SetPosition(1, gameObject.transform.position);
+        if (grapplePoint != null) grapplePoint.gameObject.GetComponent<LineRenderer>().SetPosition(1, transform.position);
 
         if (ragdollController.Ragdolled()) return;
 
-
-        if (Input.GetKeyDown(KeyCode.Mouse0) && CheckGrapple())
+        if (Input.GetKeyDown(KeyCode.Mouse0) && quickGrappleCheck())
         {
-            FindObjectOfType<AudioManager>().play("GrappleAttach"); 
+            FindObjectOfType<AudioManager>().play("GrappleAttach");
             ToggleGrapple(true);
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            ToggleGrapple(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse1) && CheckGrapple())
-        {
-            reelingIn = true;
-        } else if (Input.GetKeyUp(KeyCode.Mouse1))
-        {
-            reelingIn = false;
-        }
+        else if (Input.GetKeyUp(KeyCode.Mouse0)) ToggleGrapple(false);
 
     }
-
-    private void FixedUpdate()
-    {
-        if (reelingIn) { reelInGrapple(); }
-    }
-
-    public void reelInGrapple()
-    {
-        SoftJointLimit sjl = new() { limit = Mathf.Max(grapplePoint.linearLimit.limit - reelInSpeed, minDistance) };
-        grapplePoint.linearLimit = sjl;
-    }
-
+    
     public void ToggleGrapple(bool grapple)
     {
         if (grapple)
         {
-            reelingIn = false;
-
             Vector3 playerTransform = transform.position;
 
             /*
-             * The line above is disgusting, but ConfigurableJoints are full of hate. If you can find a better way please do so.
+             * swapping the player position while setting up the joint is disgusting, but ConfigurableJoints are full of hate. 
+             * If you can find a better way please do so.
              *
              * Time spent dealing with ConfigurableJoints:
              * 40 minutes
              */
 
 
-            Collider grappledObject = Physics.OverlapSphere(cameraController.GetGlobalMousePosition(), grappleCheckDist, grappleLayer)[0];
+            GameObject grappledObject = GetClosestGrapple();
+            if (grappledObject == null) return;
 
             transform.position = grappledObject.transform.position;
 
