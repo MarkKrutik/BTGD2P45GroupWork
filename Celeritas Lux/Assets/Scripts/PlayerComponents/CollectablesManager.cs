@@ -10,6 +10,8 @@ public class CollectablesManager : MonoBehaviour
 
     private int collectablesAquired = 0;
 
+    public int getCollectibleCount() => collectablesAquired;
+
     public void addCollectable()
     {
         FindObjectOfType<AudioManager>().play("Collectible");
