@@ -746,6 +746,11 @@ PrefabInstance:
       propertyPath: Cinematicplay
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 74021613012125713, guid: 438a26df532ef1b449b22a29b086054c,
+        type: 3}
+      propertyPath: sunWrapper
+      value: 
+      objectReference: {fileID: 314725915}
     - target: {fileID: 315696221492249175, guid: 438a26df532ef1b449b22a29b086054c,
         type: 3}
       propertyPath: sunWrapper
@@ -1025,11 +1030,7 @@ PrefabInstance:
     - {fileID: 1171198998914402220, guid: 8720bacc905a4b145b42624714bc2981, type: 3}
     - {fileID: 4070997925789922908, guid: 8720bacc905a4b145b42624714bc2981, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5787971019394819120, guid: 438a26df532ef1b449b22a29b086054c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1682921775}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 438a26df532ef1b449b22a29b086054c, type: 3}
 --- !u!1001 &373280352
 PrefabInstance:
@@ -1079,11 +1080,6 @@ PrefabInstance:
       propertyPath: sunWrapper
       value: 
       objectReference: {fileID: 314725915}
-    - target: {fileID: 6525918354489409778, guid: 3d51df6431734cb439cd9026edc36996,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7256325849824825081, guid: 3d51df6431734cb439cd9026edc36996,
         type: 3}
       propertyPath: m_Name
@@ -1104,6 +1100,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -163.9
       objectReference: {fileID: 0}
+    - target: {fileID: 8960613736028162761, guid: 3d51df6431734cb439cd9026edc36996,
+        type: 3}
+      propertyPath: sunWrapper
+      value: 
+      objectReference: {fileID: 314725915}
     - target: {fileID: 1534405413596527269, guid: 878a51771a32327468d2ecb335340ff0,
         type: 3}
       propertyPath: m_text
@@ -2408,26 +2409,16 @@ PrefabInstance:
       propertyPath: teleportTo
       value: 
       objectReference: {fileID: 972323669}
-    - target: {fileID: 1490197328327809419, guid: d24d1c4064354be4c8da073b6ff7c057,
-        type: 3}
-      propertyPath: refillAmmount
-      value: -0.01
-      objectReference: {fileID: 0}
     - target: {fileID: 2626295158833451784, guid: d24d1c4064354be4c8da073b6ff7c057,
         type: 3}
       propertyPath: m_Name
       value: Level 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2699491018418619549, guid: d24d1c4064354be4c8da073b6ff7c057,
+    - target: {fileID: 3149762252470168114, guid: d24d1c4064354be4c8da073b6ff7c057,
         type: 3}
-      propertyPath: refillAmmount
-      value: -0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5708988159081960833, guid: d24d1c4064354be4c8da073b6ff7c057,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: sunWrapper
+      value: 
+      objectReference: {fileID: 314725915}
     - target: {fileID: 7163187616280411750, guid: d24d1c4064354be4c8da073b6ff7c057,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3618,6 +3609,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 15.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7487805667687720021, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: sunWrapper
+      value: 
+      objectReference: {fileID: 314725915}
     - target: {fileID: 8467027180654096996, guid: 572abb5689b50e64cb49b68e36f410e8,
         type: 3}
       propertyPath: m_Name
@@ -4050,26 +4046,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 843623028}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1682921769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5787971019394819120, guid: 438a26df532ef1b449b22a29b086054c,
-    type: 3}
-  m_PrefabInstance: {fileID: 361084190}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1682921775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682921769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 094d69d095327614f9c6fadef889c48f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sunWrapper: {fileID: 314725915}
-  sunScale: 1
 --- !u!1 &1702829306
 GameObject:
   m_ObjectHideFlags: 0

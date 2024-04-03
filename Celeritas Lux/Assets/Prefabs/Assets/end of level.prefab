@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunWrapper: {fileID: 0}
-  sunScale: 0
+  sunScale: 2.25
 --- !u!1001 &3740506976139150411
 PrefabInstance:
   m_ObjectHideFlags: 0
