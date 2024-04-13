@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 46d0a7474f5bc0a4a911dbeb4f224358
+guid: 48bcea9a3caf1f24cbab738766b52988
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,46 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -149,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_0
+      name: OutlinedPlayerIdleV2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c090edf78c211fd4e94cf3911e206a04
-      internalID: 172081139
+      spriteID: 39f2704779094394194e4c67e43d7f54
+      internalID: -670556557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_1
+      name: OutlinedPlayerIdleV2_1
       rect:
         serializedVersion: 2
         x: 400
@@ -184,17 +145,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd29cbc7cdd918d4caf7ab512a39ec98
-      internalID: -918864127
+      spriteID: 97f1a3686f7596a4da3cb5c5e26503b6
+      internalID: -571203460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_2
+      name: OutlinedPlayerIdleV2_2
       rect:
         serializedVersion: 2
-        x: 805
+        x: 800
         y: 1200
         width: 400
         height: 400
@@ -205,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6a9a1e71c8d3b54eb84d2f982e629c6
-      internalID: -1844345863
+      spriteID: 45126f8ba1fdc4a40a214cf5422f42e3
+      internalID: 734832394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_3
+      name: OutlinedPlayerIdleV2_3
       rect:
         serializedVersion: 2
         x: 1200
@@ -226,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbf60c0acd13f6e47aed6baf98235534
-      internalID: 1052348519
+      spriteID: 75a36dbdf0a4d6740b9aaaabc1861006
+      internalID: -1424557624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_4
+      name: OutlinedPlayerIdleV2_4
       rect:
         serializedVersion: 2
         x: 1600
@@ -247,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5001a3f21090b4e84a2600781c13d1
-      internalID: -245799213
+      spriteID: ca885decfd49b52408457facda0f1537
+      internalID: -29101706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_5
+      name: OutlinedPlayerIdleV2_5
       rect:
         serializedVersion: 2
         x: 2000
@@ -268,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b13cb683ce38994390cfeec260e98c1
-      internalID: -596967237
+      spriteID: 27edfa908a5fc7b47ac7a659a3cf909c
+      internalID: -1516169725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_6
+      name: OutlinedPlayerIdleV2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -289,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccf6f555a3c0a3f4ea1d0d79b33ec1d9
-      internalID: -242705989
+      spriteID: c6519c5865b7ad8448611f501720e39a
+      internalID: -479451873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_7
+      name: OutlinedPlayerIdleV2_7
       rect:
         serializedVersion: 2
         x: 400
@@ -310,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1acfc8618955cb94199e2449839b2425
-      internalID: 606600728
+      spriteID: 3ea5c34e098972c4baa6c0aed8a4e22a
+      internalID: -707658227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_8
+      name: OutlinedPlayerIdleV2_8
       rect:
         serializedVersion: 2
         x: 800
@@ -331,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a5efa63797dc884f86cde7310eec276
-      internalID: 1285242256
+      spriteID: 3e8c4e816c8ca8c46939f07322ebcaba
+      internalID: -301247043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_9
+      name: OutlinedPlayerIdleV2_9
       rect:
         serializedVersion: 2
         x: 1200
@@ -352,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ccd2d3e23911ca429568ebf451196b4
-      internalID: -1726793134
+      spriteID: cb6876aaa5a75fa44a87cf4238e95acb
+      internalID: 695232945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_10
+      name: OutlinedPlayerIdleV2_10
       rect:
         serializedVersion: 2
         x: 1600
@@ -373,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 941d4d6a04ccd354183be1b8af3fda0d
-      internalID: -1604389942
+      spriteID: a270ca14dffab744f9d064f86cf7e2cf
+      internalID: 456306970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_11
+      name: OutlinedPlayerIdleV2_11
       rect:
         serializedVersion: 2
         x: 2000
@@ -394,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070413b792f32e041a9e91fb16b0498d
-      internalID: 679333109
+      spriteID: 4269955cab83efe4d91ed34dac680860
+      internalID: 618085829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_12
+      name: OutlinedPlayerIdleV2_12
       rect:
         serializedVersion: 2
         x: 0
@@ -415,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c44437bcf9b62924a95388bf4c8b4884
-      internalID: -249963235
+      spriteID: 901e6afa3f07f07409a40b027e0f7065
+      internalID: -1801005663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_13
+      name: OutlinedPlayerIdleV2_13
       rect:
         serializedVersion: 2
         x: 400
@@ -436,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 682b1f3e8868ee843903cecf1f2030ee
-      internalID: -981668600
+      spriteID: 9570e31594c59a64a9881414883b6167
+      internalID: 1443505414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_14
+      name: OutlinedPlayerIdleV2_14
       rect:
         serializedVersion: 2
         x: 800
@@ -457,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f744bfb92503334f9c99a49a75c7a91
-      internalID: 911114207
+      spriteID: 322a2098487669144aca4a49878e3e22
+      internalID: -1665501409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_15
+      name: OutlinedPlayerIdleV2_15
       rect:
         serializedVersion: 2
         x: 1200
@@ -478,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b23109af9ac3eee488c56772f5ee7cfb
-      internalID: 260947793
+      spriteID: 673054e16f3b414418252a5c3e5274e0
+      internalID: -1617740618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_16
+      name: OutlinedPlayerIdleV2_16
       rect:
         serializedVersion: 2
         x: 1600
@@ -499,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65f4c69768310c447bab5aa35ad4c8b8
-      internalID: 682485798
+      spriteID: d6de4548bd261704d96eb8c457afdc47
+      internalID: -1840572866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_17
+      name: OutlinedPlayerIdleV2_17
       rect:
         serializedVersion: 2
         x: 2000
@@ -520,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afdb16bc804bb364cafa89882e282bad
-      internalID: 177680804
+      spriteID: 0ef01357e58aa4f479fe19321d93a3ab
+      internalID: -2129725780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_18
+      name: OutlinedPlayerIdleV2_18
       rect:
         serializedVersion: 2
         x: 0
@@ -541,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab7a3a5245c6b824d85c37f9245ad631
-      internalID: -186499899
+      spriteID: 733500f0ffd557a4db34d7d3fe69e68e
+      internalID: -897814870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_19
+      name: OutlinedPlayerIdleV2_19
       rect:
         serializedVersion: 2
         x: 400
@@ -562,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13971573c19f0064a8cfffbf5d7cb161
-      internalID: -1119932562
+      spriteID: 952711743939ad041981ad52a66fc346
+      internalID: 1426817065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_20
+      name: OutlinedPlayerIdleV2_20
       rect:
         serializedVersion: 2
         x: 800
@@ -583,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbc55127c826cdf4fb664b7025cca1ed
-      internalID: 333542042
+      spriteID: a2d5dff5137f6584fadf89aca00a6299
+      internalID: 1347120626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_21
+      name: OutlinedPlayerIdleV2_21
       rect:
         serializedVersion: 2
         x: 1200
@@ -604,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ef21be7819f0f943b78e0872e76ff15
-      internalID: 472964823
+      spriteID: 5910bb6e92c9310438e973a8ce3942f7
+      internalID: -1488150797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_22
+      name: OutlinedPlayerIdleV2_22
       rect:
         serializedVersion: 2
         x: 1600
@@ -625,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d231a878865faa845adf2766e636e0a2
-      internalID: 1558847494
+      spriteID: e676e3470aa4e844395c9842105c94ac
+      internalID: -1059530296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OutlinedPlayerIdle_23
+      name: OutlinedPlayerIdleV2_23
       rect:
         serializedVersion: 2
         x: 2000
@@ -646,8 +607,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5b17f580f0414d45b2663fbcdb489a2
-      internalID: -1251322916
+      spriteID: 2b1f398802c620a46a8cf49488d14d9d
+      internalID: 23735100
       vertices: []
       indices: 
       edges: []
@@ -663,30 +624,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      OutlinedPlayerIdle_0: 172081139
-      OutlinedPlayerIdle_1: -918864127
-      OutlinedPlayerIdle_10: -1604389942
-      OutlinedPlayerIdle_11: 679333109
-      OutlinedPlayerIdle_12: -249963235
-      OutlinedPlayerIdle_13: -981668600
-      OutlinedPlayerIdle_14: 911114207
-      OutlinedPlayerIdle_15: 260947793
-      OutlinedPlayerIdle_16: 682485798
-      OutlinedPlayerIdle_17: 177680804
-      OutlinedPlayerIdle_18: -186499899
-      OutlinedPlayerIdle_19: -1119932562
-      OutlinedPlayerIdle_2: -1844345863
-      OutlinedPlayerIdle_20: 333542042
-      OutlinedPlayerIdle_21: 472964823
-      OutlinedPlayerIdle_22: 1558847494
-      OutlinedPlayerIdle_23: -1251322916
-      OutlinedPlayerIdle_3: 1052348519
-      OutlinedPlayerIdle_4: -245799213
-      OutlinedPlayerIdle_5: -596967237
-      OutlinedPlayerIdle_6: -242705989
-      OutlinedPlayerIdle_7: 606600728
-      OutlinedPlayerIdle_8: 1285242256
-      OutlinedPlayerIdle_9: -1726793134
+      OutlinedPlayerIdleV2_0: -670556557
+      OutlinedPlayerIdleV2_1: -571203460
+      OutlinedPlayerIdleV2_10: 456306970
+      OutlinedPlayerIdleV2_11: 618085829
+      OutlinedPlayerIdleV2_12: -1801005663
+      OutlinedPlayerIdleV2_13: 1443505414
+      OutlinedPlayerIdleV2_14: -1665501409
+      OutlinedPlayerIdleV2_15: -1617740618
+      OutlinedPlayerIdleV2_16: -1840572866
+      OutlinedPlayerIdleV2_17: -2129725780
+      OutlinedPlayerIdleV2_18: -897814870
+      OutlinedPlayerIdleV2_19: 1426817065
+      OutlinedPlayerIdleV2_2: 734832394
+      OutlinedPlayerIdleV2_20: 1347120626
+      OutlinedPlayerIdleV2_21: -1488150797
+      OutlinedPlayerIdleV2_22: -1059530296
+      OutlinedPlayerIdleV2_23: 23735100
+      OutlinedPlayerIdleV2_3: -1424557624
+      OutlinedPlayerIdleV2_4: -29101706
+      OutlinedPlayerIdleV2_5: -1516169725
+      OutlinedPlayerIdleV2_6: -479451873
+      OutlinedPlayerIdleV2_7: -707658227
+      OutlinedPlayerIdleV2_8: -301247043
+      OutlinedPlayerIdleV2_9: 695232945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnergyManager : MonoBehaviour
@@ -16,6 +18,10 @@ public class EnergyManager : MonoBehaviour
 
     private RagdollController ragdollController;
 
+    public Animator animator;
+
+    public bool underhalf = false;
+
     private void Start()
     {
         ragdollController = GetComponent<RagdollController>();
@@ -29,6 +35,30 @@ public class EnergyManager : MonoBehaviour
         energyBar.SetEnergy(curEnergy);
     }
 
+    public async void Update()
+    {
+        animator.SetBool("halfenergy", false);
+        if (curEnergy <= maxEnergy / 2 && underhalf == false)
+        {   
+
+            if (animator.GetBool("Dash") == true)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(0.6));
+                animator.SetBool("halfenergy", true);
+                underhalf = true;
+            }
+            else
+            {
+                await Task.Delay(TimeSpan.FromSeconds(0.1));
+                animator.SetBool("halfenergy", true);
+                underhalf = true;
+                
+                
+            }
+
+        }
+    }
+
     public bool ChangePower(float amount)
     {
         if (curEnergy <= 0 && amount <= 0) return true; // prevent rapid ragdoll from energy zones
@@ -36,6 +66,8 @@ public class EnergyManager : MonoBehaviour
         curEnergy = Mathf.Clamp(curEnergy + amount, 0, maxEnergy);
         //Debug.Log(curEnergy);
         energyBar.SetEnergy(curEnergy);
+
+        
         if (curEnergy <= 0)
         {
             ragdollController.ToggleRagdoll(true);
