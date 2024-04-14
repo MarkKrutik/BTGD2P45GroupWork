@@ -9,6 +9,10 @@ public class TitleScreen : MonoBehaviour
     public GameObject Creditscreen;
 
     public static bool crediton = false;
+
+    public GameObject logo;
+
+    public static bool logoon = true;
     
     void Start()
     {
