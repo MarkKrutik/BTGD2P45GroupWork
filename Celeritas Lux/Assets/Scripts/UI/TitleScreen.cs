@@ -12,8 +12,12 @@ public class TitleScreen : MonoBehaviour
 
     public GameObject logo;
 
+    public GameObject Title;
+
     public static bool logoon = true;
-    
+
+    public Animator Animator;
+
     void Start()
     {
         Creditscreen.SetActive(false);
@@ -22,6 +26,17 @@ public class TitleScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        AnimatorClipInfo[] info;
+
+        info = Animator.GetCurrentAnimatorClipInfo(0);
+
+        if (info[0].clip.name.Equals("logoscreen end"))
+        {
+            Title.active = true;
+        }
+
+
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (crediton)  

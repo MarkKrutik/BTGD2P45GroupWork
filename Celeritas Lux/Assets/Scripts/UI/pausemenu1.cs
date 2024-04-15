@@ -15,6 +15,8 @@ public class pausemenu : MonoBehaviour
     public GameObject OptionsMenu;
 
     
+
+    
     void Update()
     {
         
@@ -89,5 +91,7 @@ public class pausemenu : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().play("UIConfirm");
         SceneManager.LoadScene("Titlescreen");
+        Time.timeScale = 1f;
+
     }
 }

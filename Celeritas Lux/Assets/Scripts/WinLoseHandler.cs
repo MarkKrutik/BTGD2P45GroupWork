@@ -14,14 +14,14 @@ public class WinLoseHandler : MonoBehaviour
         {
             if (other.gameObject.GetComponent<CollectablesManager>().getCollectibleCount() >= winCollectableCount)
             {
-                // send to win screen
-                SceneManager.LoadScene("Titlescreen");
-                Time.timeScale = 0f;
+                Cinematic.CinematicActivate = true;
+                Cinematic.Cinematicsect = 5;
+                
             } else
             {
-                // send to lose screen
-                SceneManager.LoadScene("Titlescreen");
-                Time.timeScale = 0f;
+                Cinematic.CinematicActivate = true;
+                Cinematic.Cinematicsect = 6;
+                
             }
         }
     }
