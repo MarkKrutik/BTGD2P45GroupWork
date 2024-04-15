@@ -33,7 +33,7 @@ public class TitleScreen : MonoBehaviour
 
         if (info[0].clip.name.Equals("logoscreen end"))
         {
-            Title.active = true;
+            Title.SetActive(true);
         }
 
 

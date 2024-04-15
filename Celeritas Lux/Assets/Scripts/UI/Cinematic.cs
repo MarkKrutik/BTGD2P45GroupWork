@@ -41,14 +41,14 @@ public class Cinematic : MonoBehaviour
 
     void Update()
     {
-        Cinematic1.active = false;
-        Cinematic2.active = false;
-        Cinematic3.active = false;
-        Cinematic4.active = false;
-        Cinematic5.active = false;
-        Cinematic6.active = false;
-        Losecinematic.active = false;
-        Wincinematic.active = false;
+        Cinematic1.SetActive(false);
+        Cinematic2.SetActive(false);
+        Cinematic3.SetActive(false);
+        Cinematic4.SetActive(false);
+        Cinematic5.SetActive(false);
+        Cinematic6.SetActive(false);
+        Losecinematic.SetActive(false);
+        Wincinematic.SetActive(false);
 
         if (CinematicActivate)
         {
@@ -92,11 +92,11 @@ public class Cinematic : MonoBehaviour
             {
                 if (CLength == 2)
                 {
-                    Cinematic1.active = true;
+                    Cinematic1.SetActive(true);
                 }
                 else if (CLength == 1)
                 {
-                    Cinematic2.active = true;
+                    Cinematic2.SetActive(true);
                 }
             }
 
@@ -104,11 +104,11 @@ public class Cinematic : MonoBehaviour
             {
                 if (CLength == 2)
                 {
-                    Cinematic3.active = true;
+                    Cinematic3.SetActive(true);
                 }
                 else if (CLength == 1)
                 {
-                    Cinematic4.active = true;
+                    Cinematic4.SetActive(true);
                 }
 
             }
@@ -117,7 +117,7 @@ public class Cinematic : MonoBehaviour
             {
                 if (CLength == 1)
                 {
-                    Cinematic5.active = true;
+                    Cinematic5.SetActive(true);
                 }
             }
 
@@ -125,7 +125,7 @@ public class Cinematic : MonoBehaviour
             {
                 if (CLength == 1)
                 {
-                    Cinematic6.active = true;
+                    Cinematic6.SetActive(true);
                 }
             }
 
@@ -133,7 +133,7 @@ public class Cinematic : MonoBehaviour
             {
                 if (CLength == 1)
                 {
-                    Wincinematic.active = true;
+                    Wincinematic.SetActive(true);
                 }
             }
             if (Cinematicsect == 6)
