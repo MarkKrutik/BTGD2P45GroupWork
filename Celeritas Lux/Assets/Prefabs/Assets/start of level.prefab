@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7297191712971495444}
   - component: {fileID: 3868837200821978217}
   - component: {fileID: 6044187183906653903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: start of level
   m_TagString: Untagged
   m_Icon: {fileID: 0}

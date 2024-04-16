@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4377156568299093082}
   - component: {fileID: -3387821272405021223}
   - component: {fileID: 8079460888047409960}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Battery_Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,6 +264,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9d1f4d51d612c4c40b727a6c8646ad38, type: 2}
+    - target: {fileID: 451344082945699629, guid: 016cd150f773f1a4bbf3d66dfcabd67e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 016cd150f773f1a4bbf3d66dfcabd67e,
         type: 3}
       propertyPath: m_Name

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2381690081079886729}
   - component: {fileID: 2242023432426927523}
   - component: {fileID: 4379277583230029728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Energy_Checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

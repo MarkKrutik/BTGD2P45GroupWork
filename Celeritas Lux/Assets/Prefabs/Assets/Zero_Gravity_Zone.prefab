@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7739478791421075755}
   - component: {fileID: 3446581346099494745}
   - component: {fileID: 8500540217159447787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Zero_Gravity_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
