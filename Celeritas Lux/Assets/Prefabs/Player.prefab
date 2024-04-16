@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 3681147227989301857}
   - component: {fileID: 415789292978335171}
   - component: {fileID: 3893412139551722820}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3681147227989301857
 Transform:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7109152374085312699}
   - component: {fileID: 7398951905463102413}
   - component: {fileID: 4340972789672824326}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 878040816694324806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: 0, y: 0.23, z: -27.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -151,7 +151,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 32.4
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -164,7 +164,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -273,7 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4647042190473513312}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GroundCast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 7824504985263484829}
   - component: {fileID: 2270466255900022895}
   - component: {fileID: 5659961462637045411}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -429,8 +429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 415789292978335171}
-  animator: {fileID: 0}
-  spriterendered: {fileID: 0}
+  animator: {fileID: 2270466255900022895}
+  spriterendered: {fileID: 5659961462637045411}
 --- !u!114 &5366501543678736503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce33512a1dc50f4f8d7acf21b3283a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 6847810386918355773}
 --- !u!114 &4566268267231015577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxEnergy: 10
   energyBar: {fileID: 0}
+  animator: {fileID: 2270466255900022895}
+  underhalf: 0
 --- !u!114 &994334833619703248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +518,7 @@ MonoBehaviour:
   health: 0
   checkpointPosition: {x: 0, y: 0, z: 0}
   respawnDelay: 2
-  animator: {fileID: 0}
+  animator: {fileID: 2270466255900022895}
 --- !u!114 &2537954196872259021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,7 +548,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 3095
-  animator: {fileID: 0}
+  animator: {fileID: 2270466255900022895}
 --- !u!114 &3330828485157841312
 MonoBehaviour:
   m_ObjectHideFlags: 0
