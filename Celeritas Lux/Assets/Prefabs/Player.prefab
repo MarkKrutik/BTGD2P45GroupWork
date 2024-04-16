@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 878040816694324806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.23, z: -27.5}
+  m_LocalPosition: {x: 0, y: 0.23, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -150,7 +150,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 32.4
   orthographic: 0
   orthographic size: 5
@@ -305,7 +305,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6026035267743653726}
   - component: {fileID: 2154991057617612344}
-  - component: {fileID: 212733664984613531}
   - component: {fileID: 1722382786915199517}
   - component: {fileID: 1658446471623015104}
   - component: {fileID: 5366501543678736503}
@@ -367,27 +366,6 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &212733664984613531
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9132135753806124897}
-  m_Material: {fileID: 13400000, guid: 75501225d6a19ff47b425c00138af664, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1722382786915199517
 Rigidbody:
