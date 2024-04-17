@@ -33,6 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7245285929766809116}
+  - {fileID: 3486087672421092846}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2381690081079886729
@@ -86,6 +87,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790e5d330d5cce041aea44207e3d8eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &3483576519991225676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1188661087306009338}
+    m_Modifications:
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576867404932698867, guid: f0e49d6902a8c564aad7f0099b73fda0,
+        type: 3}
+      propertyPath: m_Name
+      value: Energy Refill Swirl
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0e49d6902a8c564aad7f0099b73fda0, type: 3}
+--- !u!4 &3486087672421092846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 16101419126939810, guid: f0e49d6902a8c564aad7f0099b73fda0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3483576519991225676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7135624129832520183
 PrefabInstance:
   m_ObjectHideFlags: 0
