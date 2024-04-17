@@ -4100,6 +4100,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5922723203786293981, guid: 438a26df532ef1b449b22a29b086054c,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7455623263004339339, guid: 438a26df532ef1b449b22a29b086054c,
         type: 3}
       propertyPath: m_Name
@@ -6124,6 +6129,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398951905463102413, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
+        type: 3}
+      propertyPath: m_Dithering
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398951905463102413, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
+        type: 3}
+      propertyPath: m_Antialiasing
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398951905463102413, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7824504985263484829, guid: 7f0e4e6db26c5e94f86220cc2c4bd0d7,
         type: 3}
