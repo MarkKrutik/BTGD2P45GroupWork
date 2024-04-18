@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1937262580}
-  m_IndirectSpecularColor: {r: 0.0047468785, g: 0.0003481777, b: 0.008105395, a: 1}
+  m_IndirectSpecularColor: {r: 0.0060211895, g: 0.00044163803, b: 0.010281229, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,6 +138,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -212,6 +217,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -295,6 +305,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -378,6 +393,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -461,6 +481,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -529,6 +554,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -679,6 +709,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -752,6 +787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -836,6 +876,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -909,6 +954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -991,6 +1041,11 @@ PrefabInstance:
     - target: {fileID: 3347094988177663320, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1139,6 +1194,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1152,6 +1212,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -1305,6 +1370,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1388,6 +1458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1413,6 +1488,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1487,6 +1567,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -1588,6 +1673,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1668,6 +1758,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1821,6 +1916,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1840,6 +1940,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1978,6 +2083,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1991,6 +2101,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -2056,6 +2171,124 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4a8edc8cc19504299eb6f2434f7f09, type: 3}
+--- !u!1 &148328241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148328242}
+  - component: {fileID: 148328244}
+  - component: {fileID: 148328243}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148328242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148328241}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314725914}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &148328243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148328241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &148328244
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148328241}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.05
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!4 &162054969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3347094988177663320, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
@@ -2094,6 +2327,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2232,6 +2470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2314,6 +2557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2398,6 +2646,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2423,6 +2676,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -2506,6 +2764,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56284230}
     m_Modifications:
+    - target: {fileID: 4796235459877508330, guid: 91b7ac06d9e153c4589ccb3df0ff5afd,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5964043958198628229, guid: 91b7ac06d9e153c4589ccb3df0ff5afd,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2689,6 +2952,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2726,6 +2994,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -2864,6 +3137,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2932,6 +3210,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2945,6 +3228,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -3034,6 +3322,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3102,6 +3395,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -3187,6 +3485,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3352,6 +3655,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3435,6 +3743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3454,6 +3767,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -3566,6 +3884,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1937262578}
+  - {fileID: 1491098176}
+  - {fileID: 148328242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &314725915
@@ -3589,6 +3909,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -3727,6 +4052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3764,6 +4094,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -3844,6 +4179,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -3932,11 +4272,6 @@ PrefabInstance:
       propertyPath: sunWrapper
       value: 
       objectReference: {fileID: 314725915}
-    - target: {fileID: 481228568882255783, guid: 438a26df532ef1b449b22a29b086054c,
-        type: 3}
-      propertyPath: m_StaticShadowCaster
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5442552444641260844, guid: 438a26df532ef1b449b22a29b086054c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3986,11 +4321,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5922723203786293981, guid: 438a26df532ef1b449b22a29b086054c,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7455623263004339339, guid: 438a26df532ef1b449b22a29b086054c,
         type: 3}
@@ -4080,6 +4410,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4146,6 +4481,11 @@ PrefabInstance:
     - target: {fileID: 3347094988177663320, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4239,6 +4579,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -4312,6 +4657,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -4386,6 +4736,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4481,6 +4836,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -4634,6 +4994,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4659,6 +5024,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -4754,6 +5124,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -4889,6 +5264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4902,6 +5282,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56284230}
     m_Modifications:
+    - target: {fileID: 5003641375409192367, guid: d06af0a32e4289d4eba1bf9e09df636b,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6141693344942245568, guid: d06af0a32e4289d4eba1bf9e09df636b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4991,6 +5376,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5114,6 +5504,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5203,6 +5598,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 46.475
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5234,6 +5634,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5692,6 +6097,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 94.462
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5781,6 +6191,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5864,6 +6279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5877,6 +6297,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -6055,6 +6480,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -6211,6 +6641,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6224,6 +6659,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -6304,6 +6744,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6405,6 +6850,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6473,6 +6923,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6562,6 +7017,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6663,6 +7123,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6801,6 +7266,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6814,6 +7284,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6894,6 +7369,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -7047,6 +7527,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7066,6 +7551,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7149,6 +7639,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7229,6 +7724,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7312,6 +7812,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -7380,6 +7885,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7518,6 +8028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7586,6 +8101,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7599,6 +8119,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -7682,6 +8207,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7826,6 +8356,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7851,6 +8386,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7934,6 +8474,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8105,6 +8650,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8179,6 +8729,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8192,6 +8747,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -8342,6 +8902,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8410,6 +8975,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8423,6 +8993,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8576,6 +9151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8589,6 +9169,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8672,6 +9257,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -8825,6 +9415,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8923,6 +9518,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8997,6 +9597,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9010,6 +9615,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9163,6 +9773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9246,6 +9861,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9314,6 +9934,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9327,6 +9952,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9410,6 +10040,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -9554,6 +10189,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9637,6 +10277,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -91.48
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9650,6 +10295,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56284230}
     m_Modifications:
+    - target: {fileID: 7044947489497571373, guid: eea2cb349d469444abc98f1f63c0226a,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8182902769654930242, guid: eea2cb349d469444abc98f1f63c0226a,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9794,6 +10444,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9889,6 +10544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9902,6 +10562,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -10052,6 +10717,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -40.639
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10118,6 +10788,11 @@ PrefabInstance:
     - target: {fileID: 3347094988177663320, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10209,6 +10884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10276,6 +10956,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10360,6 +11045,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -91.48
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10442,6 +11132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10550,6 +11245,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10632,6 +11332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10722,6 +11427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10790,6 +11500,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10803,6 +11518,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -10944,6 +11664,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11058,6 +11783,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -11143,6 +11873,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11223,6 +11958,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11361,6 +12101,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -38.609
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11380,6 +12125,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -11509,6 +12259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11607,6 +12362,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11626,6 +12386,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56284230}
     m_Modifications:
+    - target: {fileID: 5003641375409192367, guid: d06af0a32e4289d4eba1bf9e09df636b,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6141693344942245568, guid: d06af0a32e4289d4eba1bf9e09df636b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -11769,6 +12534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11991,6 +12761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12077,6 +12852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12160,6 +12940,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12191,6 +12976,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -12320,6 +13110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12409,6 +13204,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12481,6 +13281,11 @@ PrefabInstance:
     - target: {fileID: 3347094988177663320, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12557,6 +13362,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12594,6 +13404,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -12732,6 +13547,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12745,6 +13565,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -12834,6 +13659,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12902,6 +13732,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -12991,6 +13826,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -13120,6 +13960,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13187,6 +14032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13270,6 +14120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13360,6 +14215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13428,6 +14288,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13441,6 +14306,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13624,6 +14494,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13643,6 +14518,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56284230}
     m_Modifications:
+    - target: {fileID: 7044947489497571373, guid: eea2cb349d469444abc98f1f63c0226a,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8182902769654930242, guid: eea2cb349d469444abc98f1f63c0226a,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13732,6 +14612,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13806,6 +14691,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13959,6 +14849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14060,6 +14955,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14155,6 +15055,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14229,6 +15134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14242,6 +15152,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14331,6 +15246,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -14493,6 +15413,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14582,6 +15507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14601,6 +15531,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -14675,6 +15610,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14764,6 +15704,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -14849,6 +15794,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -14978,6 +15928,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15057,6 +16012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15141,6 +16101,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 46.475
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15152,6 +16117,124 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1529588816}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1491098175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491098176}
+  - component: {fileID: 1491098178}
+  - component: {fileID: 1491098177}
+  m_Layer: 0
+  m_Name: Lighting Sun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491098176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491098175}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.93476284, y: -0, z: -0, w: 0.35527238}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314725914}
+  m_LocalEulerAnglesHint: {x: 138.38, y: 0, z: 0}
+--- !u!114 &1491098177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491098175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &1491098178
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491098175}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.9708385, b: 0.6933962, a: 1}
+  m_Intensity: 10
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0
+    m_NormalBias: 0.4
+    m_NearPlane: 0.1
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 4961
+  m_UseColorTemperature: 1
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1493254328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15230,6 +16313,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15249,6 +16337,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15323,6 +16416,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15397,6 +16495,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -15556,6 +16659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15623,6 +16731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15692,6 +16805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15715,6 +16833,26 @@ PrefabInstance:
       propertyPath: sunWrapper
       value: 
       objectReference: {fileID: 314725915}
+    - target: {fileID: 2391658392298370778, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192882944968824591, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976729229102261738, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985539545025021145, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5869054196771956030, guid: 572abb5689b50e64cb49b68e36f410e8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15765,15 +16903,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6777944572738536511, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787150850286331148, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460938799942003684, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7487805667687720021, guid: 572abb5689b50e64cb49b68e36f410e8,
         type: 3}
       propertyPath: sunWrapper
       value: 
       objectReference: {fileID: 314725915}
+    - target: {fileID: 7579028072486552205, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8467027180654096996, guid: 572abb5689b50e64cb49b68e36f410e8,
         type: 3}
       propertyPath: m_Name
       value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8974099828285327921, guid: 572abb5689b50e64cb49b68e36f410e8,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15858,6 +17021,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -91.48
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15871,6 +17039,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16015,6 +17188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16083,6 +17261,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16096,6 +17279,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -16234,6 +17422,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16359,6 +17552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16372,6 +17570,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56284230}
     m_Modifications:
+    - target: {fileID: 937421346739407476, guid: 2305bb16e025c2f4b9fc4820569e71fb,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1586005733414726561, guid: 2305bb16e025c2f4b9fc4820569e71fb,
         type: 3}
       propertyPath: m_Name
@@ -16528,6 +17731,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16571,6 +17779,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16700,6 +17913,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16786,6 +18004,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16805,6 +18028,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -16939,6 +18167,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17028,6 +18261,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 50.841
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17110,6 +18348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17200,6 +18443,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -38.609
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17268,6 +18516,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17293,6 +18546,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17361,6 +18619,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17429,6 +18692,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17524,6 +18792,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17607,6 +18880,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17745,6 +19023,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17840,6 +19123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17922,6 +19210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -91.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18018,6 +19311,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sun
       objectReference: {fileID: 0}
+    - target: {fileID: 732548465904763407, guid: 57a2f82c65e34c14fae2ffa0dae677de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236929153214538714, guid: 57a2f82c65e34c14fae2ffa0dae677de,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18092,6 +19395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18105,6 +19413,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18243,6 +19556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18325,6 +19643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -91.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18420,6 +19743,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -38.609
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18528,6 +19856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18608,6 +19941,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18676,6 +20014,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18689,6 +20032,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -18778,6 +20126,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18922,6 +20275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18935,6 +20293,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19030,6 +20393,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -19201,6 +20569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19284,6 +20657,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19303,6 +20681,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -19398,6 +20781,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19527,6 +20915,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19546,6 +20939,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -19619,6 +21017,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19708,6 +21111,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19797,6 +21205,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -19880,6 +21293,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -19967,7 +21385,7 @@ GameObject:
   - component: {fileID: 1937262580}
   - component: {fileID: 1937262579}
   m_Layer: 0
-  m_Name: Sun
+  m_Name: Skybox Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20001,7 +21419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Version: 3
-  m_UsePipelineSettings: 1
+  m_UsePipelineSettings: 0
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
   m_RenderingLayers: 1
@@ -20029,11 +21447,11 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
+    m_Bias: 0
     m_NormalBias: 0.4
     m_NearPlane: 0.1
     m_CullingMatrixOverride:
@@ -20060,7 +21478,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -20151,6 +21569,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 94.462
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20234,6 +21657,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20247,6 +21675,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -20375,6 +21808,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20458,6 +21896,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20540,6 +21983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20627,6 +22075,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20701,6 +22154,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20726,6 +22184,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -20864,6 +22327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20938,6 +22406,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20957,6 +22430,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21095,6 +22573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21184,6 +22667,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21267,6 +22755,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21286,6 +22779,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -21381,6 +22879,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -21576,6 +23079,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -21665,6 +23173,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -21808,6 +23321,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21827,6 +23345,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21950,6 +23473,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 52.871
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21963,6 +23491,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -22046,6 +23579,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22202,6 +23740,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid002 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22215,6 +23758,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 1005163533199332502, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653932224420672835, guid: 9a4a8edc8cc19504299eb6f2434f7f09,
         type: 3}
       propertyPath: m_Name
@@ -22368,6 +23916,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.386
       objectReference: {fileID: 0}
+    - target: {fileID: 4483449929427983927, guid: 9ca17d5547f6ee24aa8f16dbcc19b567,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22387,6 +23940,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484814724}
     m_Modifications:
+    - target: {fileID: 2405809405563138760, guid: 721256fbbfa3e644781e3265ca51c493,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3542092328803862951, guid: 721256fbbfa3e644781e3265ca51c493,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -22536,6 +24094,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asteroid002 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319160423702754020, guid: 5f766bfe18e8aaa498599776f70b368d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
